@@ -31,4 +31,6 @@ in
       cmake
       gettext
     ];
+
+    disallowedReferences = [ stdenv.cc ];
   }
