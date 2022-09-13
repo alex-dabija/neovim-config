@@ -32,5 +32,9 @@ in
       gettext
     ];
 
+    cmakeFlags = [
+      "-DUSE_BUNDLED=OFF"
+    ];
+
     disallowedReferences = [ stdenv.cc ];
   }
