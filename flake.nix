@@ -22,10 +22,18 @@
           let f = import path { inherit src; };
           in f ((builtins.intersectAttrs (builtins.functionArgs f) pkgs) // overrides);
 
-      in {
+      in rec {
         packages = {
           default = callPackage ./lib/my-neovim.nix inputs.neovim {
           };
+        };
+
+        apps = rec {
+          nvim = flake-utils.lib.mkApp {
+            drv = packages.default;
+            name = "nvim";
+          };
+          default = nvim;
         };
       });
 }
