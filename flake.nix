@@ -22,9 +22,9 @@
           let f = import path;
           in f ((builtins.intersectAttrs (builtins.functionArgs f) pkgs) // overrides);
 
-        wrapNeovim = callPackage ./lib/neovim-wrapper.nix {
+        wrapNeovim = callPackage ./lib/neovim/wrapper.nix {
         };
-        unwrappedNeovim = callPackage ./lib/neovim.nix {
+        unwrappedNeovim = callPackage ./lib/neovim/default.nix {
           src = inputs.neovim;
         };
 
