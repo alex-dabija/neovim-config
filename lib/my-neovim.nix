@@ -1,8 +1,7 @@
 # A simplified Neovim package based on the one from nixpkgs.
 # Used as a learning Nix packages exercise.
 # Original package: https://github.com/NixOS/nixpkgs/blob/master/pkgs/applications/editors/neovim/default.nix
-{ src }:
-{ lib, stdenv, cmake, libuv, msgpack, luajit, tree-sitter, unibilium, libtermkey, libvterm-neovim, gperf, gettext }:
+{ src, lib, stdenv, cmake, libuv, msgpack, luajit, tree-sitter, unibilium, libtermkey, libvterm-neovim, gperf, gettext }:
 let
   luaEnv = luajit.withPackages (ps:
     with ps; [ lpeg mpack ]

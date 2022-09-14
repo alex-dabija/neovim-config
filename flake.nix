@@ -18,14 +18,20 @@
         pkgs = import nixpkgs {
           inherit system;
         };
-        callPackage = path: src: overrides:
-          let f = import path { inherit src; };
+        callPackage = path: overrides:
+          let f = import path;
           in f ((builtins.intersectAttrs (builtins.functionArgs f) pkgs) // overrides);
 
+        wrapNeovim = callPackage ./lib/neovim-wrapper.nix {
+        };
+        unwrappedNeovim = callPackage ./lib/my-neovim.nix {
+          src = inputs.neovim;
+        };
+
       in rec {
-        packages = {
-          default = callPackage ./lib/my-neovim.nix inputs.neovim {
-          };
+        packages = rec {
+          neovim = wrapNeovim unwrappedNeovim;
+          default = neovim;
         };
 
         apps = rec {
