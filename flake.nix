@@ -24,7 +24,7 @@
 
         wrapNeovim = callPackage ./lib/neovim-wrapper.nix {
         };
-        unwrappedNeovim = callPackage ./lib/my-neovim.nix {
+        unwrappedNeovim = callPackage ./lib/neovim.nix {
           src = inputs.neovim;
         };
 

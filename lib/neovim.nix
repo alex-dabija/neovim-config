@@ -8,7 +8,7 @@ let
   );
 in
   stdenv.mkDerivation {
-    pname = "my-neovim";
+    pname = "neovim";
     version = "0.7.2";
 
     inherit src;
