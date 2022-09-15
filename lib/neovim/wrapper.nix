@@ -5,24 +5,19 @@ neovim:
     wrapper = {
       viAlias ? false,
       vimAlias ? false,
-    }:
+    }@args:
       let
-        wrapperArgs = [ "1" "2" "3" ];
+        context = {
+          # Arguments with default values are not captured by `@args`.
+          inherit viAlias vimAlias;
+        } // args;
 
-        template = lib.templateFile "test.sh" ./test.sh.mustache {
-          message = "Hello, world from a mustache template!";
-          options = {
-            executable = true;
-          };
-        };
+        postBuildScript = lib.templateExecutableFile "wrapper-postbuild.sh" ./wrapper-postbuild.sh.mustache context;
       in
         symlinkJoin {
           name = "${lib.getName neovim}-${lib.getVersion neovim}";
           paths = [ neovim ];
-
-          postBuild = lib.optionalString stdenv.isLinux ''
-            ${template.outPath}
-          '';
+          postBuild = "source ${postBuildScript}";
         };
   in
     lib.makeOverridable wrapper

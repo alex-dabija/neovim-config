@@ -32,7 +32,10 @@
         lib = pkgs.lib;
 
         packages = rec {
-          neovim = (wrapNeovim unwrappedNeovim) {};
+          neovim = (wrapNeovim unwrappedNeovim) {
+            viAlias = true;
+            vimAlias = true;
+          };
           default = neovim;
         };
 

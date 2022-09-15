@@ -14,7 +14,8 @@ in
   overlays = {
     libraryFunctions = final: prev: {
       lib = prev.lib // {
-        templateFile = callPackage ./template.nix { };
+        templateFile = callPackage ./template.nix { } { };
+        templateExecutableFile = callPackage ./template.nix { } { executable = true; };
       };
     };
   };

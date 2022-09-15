@@ -1,11 +1,11 @@
 # Mustache templates based on https://pablo.tools/blog/computers/nix-mustache-templates/
 
 { lib, stdenv, mustache-go }:
-name: template: data:
+options: name: template: data:
   let
     options' = {
       executable = false;
-    } // (data.options or { });
+    } // options;
   in
     stdenv.mkDerivation {
       inherit name;
