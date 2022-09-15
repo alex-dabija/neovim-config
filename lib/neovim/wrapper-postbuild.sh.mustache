@@ -1,3 +1,7 @@
+{{#withPython}}
+makeWrapper {{pythonInterpreter}} $out/bin/nvim-python --unset PYTHONPATH
+{{/withPython}}
+
 {{#viAlias}}
 ln -s $out/bin/nvim $out/bin/vi
 {{/viAlias}}
