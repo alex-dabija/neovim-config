@@ -14,6 +14,9 @@ in
     inherit src;
 
     patches = [
+      # introduce a system-wide rplugin.vim in addition to the user one
+      # necessary so that nix can handle `UpdateRemotePlugins` for the plugins
+      # it installs. See https://github.com/neovim/neovim/issues/9413.
       ./system_rplugin_manifest.patch
     ];
 
