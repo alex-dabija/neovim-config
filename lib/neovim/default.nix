@@ -43,6 +43,11 @@ in
 
     disallowedReferences = [ stdenv.cc ];
 
+    passthru = {
+      luaPath = luaEnv.pkgs.lib.genLuaPathAbsStr luaEnv;
+      luaCPath = luaEnv.pkgs.lib.genLuaCPathAbsStr luaEnv;
+    };
+
     # Metadata from original neovim package
     meta = {
       description = "Vim text editor fork focused on extensibility and agility";
