@@ -18,6 +18,10 @@ neovim:
           name = "${lib.getName neovim}-${lib.getVersion neovim}";
           paths = [ neovim ];
           postBuild = "source ${postBuildScript}";
+
+          meta = neovim.meta // {
+            priority = (neovim.meta.priority or 0) - 1; # Prefer wrapped over plain Neovim
+          };
         };
   in
     lib.makeOverridable wrapper
