@@ -11,6 +11,9 @@ neovim:
 
         template = lib.templateFile "test.sh" ./test.sh.mustache {
           message = "Hello, world from a mustache template!";
+          options = {
+            executable = true;
+          };
         };
       in
         symlinkJoin {
