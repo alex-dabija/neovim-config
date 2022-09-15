@@ -1,0 +1,23 @@
+session_name: neovim-config
+start_directory: ./
+windows:
+  - panes:
+    - nvim
+  - panes:
+    - null
+  - panes:
+    - null
+  - panes:
+    - null
+  - panes:
+    - null
+  - panes:
+    - null
+  - panes:
+    - null
+  - panes:
+    - null
+  - panes:
+    - null
+  - panes:
+    - null
