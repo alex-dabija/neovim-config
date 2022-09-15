@@ -15,22 +15,24 @@
   outputs = inputs@{ self, flake-utils, nixpkgs, ... }:
     flake-utils.lib.eachDefaultSystem (system:
       let
+        utils = import ./lib/utils.nix { inherit pkgs; };
         pkgs = import nixpkgs {
           inherit system;
+          overlays = [
+            utils.overlays.libraryFunctions
+          ];
         };
-        callPackage = path: overrides:
-          let f = import path;
-          in f ((builtins.intersectAttrs (builtins.functionArgs f) pkgs) // overrides);
-
-        wrapNeovim = callPackage ./lib/neovim/wrapper.nix {
-        };
-        unwrappedNeovim = callPackage ./lib/neovim/default.nix {
+        wrapNeovim = utils.callPackage ./lib/neovim/wrapper.nix { };
+        unwrappedNeovim = utils.callPackage ./lib/neovim/default.nix {
           src = inputs.neovim;
         };
 
       in rec {
+        inherit pkgs;
+        lib = pkgs.lib;
+
         packages = rec {
-          neovim = wrapNeovim unwrappedNeovim;
+          neovim = (wrapNeovim unwrappedNeovim) {};
           default = neovim;
         };
 
