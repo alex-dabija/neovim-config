@@ -15,7 +15,7 @@ neovim:
           luaPath = neovim.passthru.luaPath;
           luaCPath = neovim.passthru.luaCPath;
           inherit remoteProvidersCommand;
-          pluginsDir = pluginUtils.packDir plugins;
+          pluginsDir = pluginUtils.packDir "nix-packer" plugins;
         } // args;
 
         postBuildScript = lib.templateExecutableFile "wrapper-postbuild.sh" ./wrapper-postbuild.sh.mustache context;

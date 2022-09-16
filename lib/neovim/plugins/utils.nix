@@ -1,8 +1,9 @@
 { lib, stdenv }:
 {
-  packDir = packages:
+  packDir = group: packages:
     let
       context = {
+        inherit group;
         plugins = builtins.map toPluginObject packages;
       };
       toPluginObject = package: {
