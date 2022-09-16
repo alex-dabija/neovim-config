@@ -22,19 +22,20 @@
     };
   };
 
-  outputs = inputs@{ self, flake-utils, nixpkgs, ... }:
+  outputs = {self, flake-utils, nixpkgs, ... }:
     flake-utils.lib.eachDefaultSystem (system:
       let
         utils = import ./lib/utils.nix { inherit pkgs; };
         pkgs = import nixpkgs {
           inherit system;
+          inputs = self.inputs;
           overlays = [
             utils.overlays.libraryFunctions
           ];
         };
         wrapNeovim = utils.callPackage ./lib/neovim/wrapper.nix { };
         unwrappedNeovim = utils.callPackage ./lib/neovim/default.nix {
-          src = inputs.neovim;
+          src = self.inputs.neovim;
         };
 
       in rec {
