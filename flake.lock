@@ -15,6 +15,22 @@
         "type": "github"
       }
     },
+    "lualine": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662921346,
+        "narHash": "sha256-bGVozEoffFxjiLACTfnDGX11yIHGhLawQWn80Nbd6TM=",
+        "owner": "nvim-lualine",
+        "repo": "lualine.nvim",
+        "rev": "a52f078026b27694d2290e34efa61a6e4a690621",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-lualine",
+        "repo": "lualine.nvim",
+        "type": "github"
+      }
+    },
     "neovim": {
       "flake": false,
       "locked": {
@@ -51,6 +67,7 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
+        "lualine": "lualine",
         "neovim": "neovim",
         "nixpkgs": "nixpkgs"
       }
