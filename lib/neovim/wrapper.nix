@@ -5,13 +5,13 @@ neovim:
     wrapper = {
       viAlias ? false,
       vimAlias ? false,
-      withPython ? false,
+      withPython3 ? false,
     }@args:
       let
         context = {
           # Arguments with default values are not captured by `@args`.
-          inherit viAlias vimAlias withPython neovim;
-          pythonInterpreter = lib.optionalString withPython python3.interpreter;
+          inherit viAlias vimAlias withPython3 neovim;
+          python3Interpreter = lib.optionalString withPython3 python3.interpreter;
           luaPath = neovim.passthru.luaPath;
           luaCPath = neovim.passthru.luaCPath;
         } // args;
