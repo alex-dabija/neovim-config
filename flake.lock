@@ -64,12 +64,29 @@
         "type": "github"
       }
     },
+    "plenary": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662196864,
+        "narHash": "sha256-qIfsQScKdwrVXUYry+RDjoMoKLuhlsw1GHOVoeOphfo=",
+        "owner": "nvim-lua",
+        "repo": "plenary.nvim",
+        "rev": "4b66054e75356ac0b909bbfee9c682e703f535c2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-lua",
+        "repo": "plenary.nvim",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
         "lualine": "lualine",
         "neovim": "neovim",
         "nixpkgs": "nixpkgs",
+        "plenary": "plenary",
         "telescope": "telescope"
       }
     },

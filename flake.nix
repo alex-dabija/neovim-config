@@ -11,6 +11,11 @@
       flake = false;
     };
 
+    plenary = {
+      url = "github:nvim-lua/plenary.nvim";
+      flake = false;
+    };
+
     telescope = {
       url = "github:nvim-telescope/telescope.nvim";
       flake = false;

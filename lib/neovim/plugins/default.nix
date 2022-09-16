@@ -1,10 +1,23 @@
 { inputs, pkgs }:
 let
-  plugin = pname: src: pkgs.vimUtils.buildVimPluginFrom2Nix {
-    inherit pname src;
-    version = src.shortRev;
+  plugin = attrs: pkgs.vimUtils.buildVimPluginFrom2Nix ({
+    version = attrs.src.shortRev;
+    dependencies = [];
+  } // attrs);
+in rec {
+  plenary = plugin {
+    pname = "plenary.nvim";
+    src = inputs.plenary;
   };
-in {
-  telescope = plugin "telescope.nvim" inputs.telescope;
-  lualine = plugin "lualine.nvim" inputs.lualine;
+
+  telescope = plugin {
+    pname = "telescope.nvim";
+    src = inputs.telescope;
+    dependencies = [ plenary ];
+  };
+
+  lualine = plugin {
+    pname = "lualine.nvim";
+    src = inputs.lualine;
+  };
 }

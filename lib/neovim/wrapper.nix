@@ -1,4 +1,4 @@
-{ lib, stdenv, symlinkJoin, makeWrapper }:
+{ pkgs, lib, stdenv, symlinkJoin, makeWrapper }:
 
 neovim:
   let
@@ -8,7 +8,7 @@ neovim:
       plugins ? [],
     }@args:
       let
-        pluginUtils = import ./plugins/utils.nix { inherit lib stdenv; };
+        pluginUtils = import ./plugins/utils.nix { inherit pkgs lib stdenv; };
         context = {
           # Arguments with default values are not captured by `@args`.
           inherit viAlias vimAlias neovim;
