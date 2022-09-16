@@ -35,7 +35,6 @@
           neovim = (wrapNeovim unwrappedNeovim) {
             viAlias = true;
             vimAlias = true;
-            withPython3 = true;
           };
           default = neovim;
         };

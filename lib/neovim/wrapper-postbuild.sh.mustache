@@ -3,10 +3,6 @@ declare -xp
 neovim_path="{{{neovim}}}/bin/nvim"
 neovim_wrapper_path="${out}/bin/nvim"
 
-{{#withPython3}}
-makeWrapper {{{python3Interpreter}}} $out/bin/nvim-python --unset PYTHONPATH
-{{/withPython3}}
-
 {{#viAlias}}
 ln -s "${neovim_wrapper_path}" "${out}/bin/vi"
 {{/viAlias}}
