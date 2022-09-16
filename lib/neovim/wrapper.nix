@@ -14,9 +14,17 @@ neovim:
           python3Interpreter = lib.optionalString withPython3 python3.interpreter;
           luaPath = neovim.passthru.luaPath;
           luaCPath = neovim.passthru.luaCPath;
+          inherit remoteProvidersCommand;
         } // args;
 
         postBuildScript = lib.templateExecutableFile "wrapper-postbuild.sh" ./wrapper-postbuild.sh.mustache context;
+
+        remoteProvidersCommand =
+          let
+            providers = [ "python3" "ruby" "node" "perl" ];
+            toSetting = provider: "let g:loaded_${provider}_provider=0";
+          in
+            lib.concatStringsSep " | " (builtins.map toSetting providers);
       in
         symlinkJoin {
           name = "${lib.getName neovim}-${lib.getVersion neovim}";

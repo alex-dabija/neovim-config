@@ -15,7 +15,10 @@ ln -s "${neovim_wrapper_path}" "${out}/bin/vi"
 ln -s "${neovim_wrapper_path}" "${out}/bin/vim"
 {{/vimAlias}}
 
-wrapper_args=("${neovim_path}" "${neovim_wrapper_path}")
+wrapper_args=("${neovim_path}" "${neovim_wrapper_path}" '--inherit-argv0')
+{{#remoteProvidersCommand}}
+wrapper_args+=('--add-flags' '--cmd "{{{remoteProvidersCommand}}}"')
+{{/remoteProvidersCommand}}
 {{#luaPath}}
 wrapper_args+=('--prefix' 'LUA_PATH' ';' '{{{luaPath}}}')
 {{/luaPath}}
