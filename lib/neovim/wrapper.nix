@@ -10,10 +10,8 @@ neovim:
       let
         context = {
           # Arguments with default values are not captured by `@args`.
-          inherit viAlias vimAlias withPython;
+          inherit viAlias vimAlias withPython neovim;
           pythonInterpreter = lib.optionalString withPython python3.interpreter;
-          neo = "${neovim}/bin/nvim";
-          wrapperArgs = lib.concatStringsSep " " [ "'${neovim}/bin/nvim'" "$out/bin/nvim" ];
           luaPath = neovim.passthru.luaPath;
           luaCPath = neovim.passthru.luaCPath;
         } // args;

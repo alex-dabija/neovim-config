@@ -1,21 +1,27 @@
 declare -xp
 
+neovim_path="{{{neovim}}}/bin/nvim"
+neovim_wrapper_path="${out}/bin/nvim"
+
 {{#withPython}}
-makeWrapper {{pythonInterpreter}} $out/bin/nvim-python --unset PYTHONPATH
+makeWrapper {{{pythonInterpreter}}} $out/bin/nvim-python --unset PYTHONPATH
 {{/withPython}}
 
 {{#viAlias}}
-ln -s $out/bin/nvim $out/bin/vi
+ln -s "${neovim_wrapper_path}" "${out}/bin/vi"
 {{/viAlias}}
 
 {{#vimAlias}}
-ln -s $out/bin/nvim $out/bin/vim
+ln -s "${neovim_wrapper_path}" "${out}/bin/vim"
 {{/vimAlias}}
 
-echo "luaPath = {{{luaPath}}}"
-echo "luaCPath = {{{luaCPath}}}"
+wrapper_args=("${neovim_path}" "${neovim_wrapper_path}")
+{{#luaPath}}
+wrapper_args+=('--prefix' 'LUA_PATH' ';' '{{{luaPath}}}')
+{{/luaPath}}
+{{#luaCPath}}
+wrapper_args+=('--prefix' 'LUA_CPATH' ';' '{{{luaCPath}}}')
+{{/luaCPath}}
 
-rm $out/bin/nvim
-makeWrapper {{{wrapperArgs}}} \
-  --prefix LUA_PATH ';' '{{{luaPath}}}' \
-  --prefix LUA_CPATH ';' '{{{luaCPath}}}'
+rm "${neovim_wrapper_path}"
+makeWrapper "${wrapper_args[@]}"
