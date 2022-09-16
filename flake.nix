@@ -11,6 +11,11 @@
       flake = false;
     };
 
+    telescope = {
+      url = "github:nvim-telescope/telescope.nvim";
+      flake = false;
+    };
+
     lualine = {
       url = "github:nvim-lualine/lualine.nvim";
       flake = false;

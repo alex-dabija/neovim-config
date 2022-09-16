@@ -69,7 +69,24 @@
         "flake-utils": "flake-utils",
         "lualine": "lualine",
         "neovim": "neovim",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "telescope": "telescope"
+      }
+    },
+    "telescope": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662321586,
+        "narHash": "sha256-JWNYnbXH8C7J0H7cE9j7akwW8C86nD0vy5GwTtLdBvw=",
+        "owner": "nvim-telescope",
+        "repo": "telescope.nvim",
+        "rev": "2584ff391b528d01bf5e8c04206d5902a79ebdde",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nvim-telescope",
+        "repo": "telescope.nvim",
+        "type": "github"
       }
     }
   },
