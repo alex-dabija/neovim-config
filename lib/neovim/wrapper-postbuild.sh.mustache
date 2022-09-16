@@ -15,6 +15,10 @@ wrapper_args=("${neovim_path}" "${neovim_wrapper_path}" '--inherit-argv0')
 {{#remoteProvidersCommand}}
 wrapper_args+=('--add-flags' '--cmd "{{{remoteProvidersCommand}}}"')
 {{/remoteProvidersCommand}}
+{{#pluginsDir}}
+wrapper_args+=('--add-flags' '--cmd "set packpath^={{{pluginsDir}}}"');
+wrapper_args+=('--add-flags' '--cmd "set runtimepath^={{{pluginsDir}}}"');
+{{/pluginsDir}}
 {{#luaPath}}
 wrapper_args+=('--prefix' 'LUA_PATH' ';' '{{{luaPath}}}')
 {{/luaPath}}

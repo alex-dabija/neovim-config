@@ -26,6 +26,10 @@
     flake-utils.lib.eachDefaultSystem (system:
       let
         utils = import ./lib/utils.nix { inherit pkgs; };
+        plugins = import ./lib/neovim/plugins {
+          inherit pkgs;
+          inputs = self.inputs;
+        };
         pkgs = import nixpkgs {
           inherit system;
           inputs = self.inputs;
@@ -46,6 +50,7 @@
           neovim = (wrapNeovim unwrappedNeovim) {
             viAlias = true;
             vimAlias = true;
+            plugins = with plugins; [ telescope lualine ];
           };
           default = neovim;
         };

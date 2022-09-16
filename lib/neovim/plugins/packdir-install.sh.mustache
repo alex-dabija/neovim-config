@@ -1,0 +1,14 @@
+pack_start_dir="${out}/pack/start"
+pack_opt_dir="${out}/pack/opt"
+
+mkdir -p "${pack_start_dir}"
+mkdir -p "${pack_opt_dir}"
+
+{{#plugins}}
+plugin_link="${pack_start_dir}/{{{name}}}"
+if [ -L "${plugin_link}" ]; then
+  echo "Duplicate plugin. Link already exists: '${plugin_link}'." >&2
+  exit 101
+fi
+ln -s '{{{path}}}' "${plugin_link}"
+{{/plugins}}

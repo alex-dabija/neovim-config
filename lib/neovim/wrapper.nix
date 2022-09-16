@@ -5,14 +5,17 @@ neovim:
     wrapper = {
       viAlias ? false,
       vimAlias ? false,
+      plugins ? [],
     }@args:
       let
+        pluginUtils = import ./plugins/utils.nix { inherit lib stdenv; };
         context = {
           # Arguments with default values are not captured by `@args`.
           inherit viAlias vimAlias neovim;
           luaPath = neovim.passthru.luaPath;
           luaCPath = neovim.passthru.luaCPath;
           inherit remoteProvidersCommand;
+          pluginsDir = pluginUtils.packDir plugins;
         } // args;
 
         postBuildScript = lib.templateExecutableFile "wrapper-postbuild.sh" ./wrapper-postbuild.sh.mustache context;
