@@ -2,6 +2,7 @@
 { lib, pkgs, config, ... }:
 let
   types = lib.types;
+  luaUtils = import ../lib/lua.nix { inherit pkgs; };
 in {
   options = {
     plugins = lib.mkOption {
@@ -13,6 +14,18 @@ in {
       '';
     };
 
+    lua = lib.mkOption {
+      type = types.lines;
+      default = "";
+      description = "Lua config";
+    };
+
+    package = lib.mkOption {
+      type = types.package;
+      description = "Neovim. The final package.";
+      readOnly = true;
+    };
+
     vim = lib.mkOption {
       type = types.attrs;
       default = { };
@@ -22,5 +35,9 @@ in {
         vim.g.noswapfile = true;
       };
     };
+  };
+
+  config = {
+    lua = luaUtils.toLua "vim" config.vim;
   };
 }

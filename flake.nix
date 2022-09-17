@@ -45,17 +45,14 @@
             })
           ];
         };
-        wrapNeovim = utils.callPackage ./lib/neovim/wrapper.nix { };
-        unwrappedNeovim = utils.callPackage ./lib/neovim/default.nix {
-          src = self.inputs.neovim;
-        };
 
         modules = pkgs.lib.evalModules {
           modules = [
             ./modules/options.nix
+            ./modules/wrapper.nix
             ./modules/demo.nix
           ];
-          specialArgs = { inherit pkgs; };
+          specialArgs = { inherit pkgs; inputs = self.inputs; };
         };
 
       in rec {
@@ -63,11 +60,7 @@
         config = modules.config;
 
         packages = rec {
-          neovim = (wrapNeovim unwrappedNeovim) {
-            viAlias = true;
-            vimAlias = true;
-            plugins = with plugins; [ telescope lualine ];
-          };
+          neovim = modules.config.package;
           default = neovim;
         };
 
