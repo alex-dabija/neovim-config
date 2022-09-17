@@ -13,9 +13,9 @@ let
 
   toLuaString = value:
     if lib.isInt value then
-      builtins.toString value
+      intToLua value
     else if lib.isBool value then
-      builtins.toString value
+      booleanToLua value
     else if lib.isString value then
       "\"${value}\""
     else abort "Unknown type for value: '${value}'.";
@@ -29,6 +29,9 @@ let
           lib.concatLists (builtins.map (field: flatten value.${field} (path ++ [ field ])) fieldNames)
         else
           [ { inherit path value; } ];
+
+  intToLua = value: builtins.toString value;
+  booleanToLua = value: if value then "true" else "false";
 
 in {
   inherit toLua;
