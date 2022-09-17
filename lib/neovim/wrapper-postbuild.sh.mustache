@@ -19,6 +19,9 @@ wrapper_args+=('--add-flags' '--cmd "{{{remoteProvidersCommand}}}"')
 wrapper_args+=('--add-flags' '--cmd "set packpath^={{{pluginsDir}}}"');
 wrapper_args+=('--add-flags' '--cmd "set runtimepath^={{{pluginsDir}}}"');
 {{/pluginsDir}}
+{{#initLua}}
+wrapper_args+=('--add-flags' '-u "{{{initLua}}}"');
+{{/initLua}}
 {{#luaPath}}
 wrapper_args+=('--prefix' 'LUA_PATH' ';' '{{{luaPath}}}')
 {{/luaPath}}

@@ -1,4 +1,4 @@
-{ pkgs, lib, stdenv, symlinkJoin, makeWrapper }:
+{ pkgs, lib, stdenv, symlinkJoin, makeWrapper, writeText }:
 
 neovim:
   let
@@ -6,6 +6,7 @@ neovim:
       viAlias ? false,
       vimAlias ? false,
       plugins ? [],
+      initLua ? "",
     }@args:
       let
         pluginUtils = import ./plugins/utils.nix { inherit pkgs lib stdenv; };
@@ -16,7 +17,8 @@ neovim:
           luaCPath = neovim.passthru.luaCPath;
           inherit remoteProvidersCommand;
           pluginsDir = pluginUtils.packDir "nix-packer" plugins;
-        } // args;
+          initLua = "${writeText "init.lua" initLua}";
+        };
 
         postBuildScript = lib.templateExecutableFile "wrapper-postbuild.sh" ./wrapper-postbuild.sh.mustache context;
 

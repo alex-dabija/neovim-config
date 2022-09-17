@@ -11,6 +11,7 @@ in {
       viAlias = true;
       vimAlias = true;
       plugins = config.plugins;
+      initLua = config.lua;
     };
   };
 }
