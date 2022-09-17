@@ -40,6 +40,9 @@
           inputs = self.inputs;
           overlays = [
             utils.overlays.libraryFunctions
+            (final: prev: {
+              neovimPlugins = plugins;
+            })
           ];
         };
         wrapNeovim = utils.callPackage ./lib/neovim/wrapper.nix { };
@@ -50,7 +53,9 @@
         modules = pkgs.lib.evalModules {
           modules = [
             ./modules/options.nix
+            ./modules/demo.nix
           ];
+          specialArgs = { inherit pkgs; };
         };
 
       in rec {
