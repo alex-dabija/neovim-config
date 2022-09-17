@@ -47,9 +47,15 @@
           src = self.inputs.neovim;
         };
 
+        modules = pkgs.lib.evalModules {
+          modules = [
+            ./modules/options.nix
+          ];
+        };
+
       in rec {
         inherit pkgs;
-        lib = pkgs.lib;
+        config = modules.config;
 
         packages = rec {
           neovim = (wrapNeovim unwrappedNeovim) {
