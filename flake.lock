@@ -64,6 +64,23 @@
         "type": "github"
       }
     },
+    "ohMyVim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1660328394,
+        "narHash": "sha256-qvYR+1Jgv3hWzWaNa1Zhogf53/SnowLzwkYqAJxDqsU=",
+        "ref": "lua-config",
+        "rev": "2f4e3e9778b782972fde41e79aaadadf749b4b70",
+        "revCount": 294,
+        "type": "git",
+        "url": "https://gitlab.tools.kbee.xyz/alex/oh-my-vim.git"
+      },
+      "original": {
+        "ref": "lua-config",
+        "type": "git",
+        "url": "https://gitlab.tools.kbee.xyz/alex/oh-my-vim.git"
+      }
+    },
     "plenary": {
       "flake": false,
       "locked": {
@@ -86,6 +103,7 @@
         "lualine": "lualine",
         "neovim": "neovim",
         "nixpkgs": "nixpkgs",
+        "ohMyVim": "ohMyVim",
         "plenary": "plenary",
         "telescope": "telescope"
       }

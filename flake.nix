@@ -25,6 +25,11 @@
       url = "github:nvim-lualine/lualine.nvim";
       flake = false;
     };
+
+    ohMyVim = {
+      url = "git+https://gitlab.tools.kbee.xyz/alex/oh-my-vim.git?ref=lua-config";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:

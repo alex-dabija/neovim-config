@@ -10,6 +10,11 @@ in rec {
     src = inputs.plenary;
   };
 
+  ohMyVim = plugin {
+    pname = "oh-my-vim";
+    src = inputs.ohMyVim;
+  };
+
   telescope = plugin {
     pname = "telescope.nvim";
     src = inputs.telescope;
