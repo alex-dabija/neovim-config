@@ -26,6 +26,11 @@
       flake = false;
     };
 
+    telescope-ui-select = {
+      url = "github:nvim-telescope/telescope-ui-select.nvim?ref=master";
+      flake = false;
+    };
+
     lualine = {
       url = "github:nvim-lualine/lualine.nvim";
       flake = false;

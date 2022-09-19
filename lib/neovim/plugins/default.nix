@@ -18,13 +18,19 @@ in rec {
   ohMyVim = plugin {
     pname = "oh-my-vim";
     src = inputs.ohMyVim;
-    dependencies = [ popup telescope ];
+    dependencies = [ popup telescope telescope-ui-select ];
   };
 
   telescope = plugin {
     pname = "telescope.nvim";
     src = inputs.telescope;
     dependencies = [ plenary ];
+  };
+
+  telescope-ui-select = plugin {
+    pname = "telescope-ui-select.nvim";
+    src = inputs.telescope-ui-select;
+    dependencies = [ telescope ];
   };
 
   lualine = plugin {
