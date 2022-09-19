@@ -16,6 +16,11 @@
       flake = false;
     };
 
+    popup = {
+      url = "github:nvim-lua/popup.nvim?ref=master";
+      flake = false;
+    };
+
     telescope = {
       url = "github:nvim-telescope/telescope.nvim";
       flake = false;

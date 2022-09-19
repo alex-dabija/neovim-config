@@ -10,9 +10,15 @@ in rec {
     src = inputs.plenary;
   };
 
+  popup = plugin {
+    pname = "popup.nvim";
+    src = inputs.popup;
+  };
+
   ohMyVim = plugin {
     pname = "oh-my-vim";
     src = inputs.ohMyVim;
+    dependencies = [ popup telescope ];
   };
 
   telescope = plugin {

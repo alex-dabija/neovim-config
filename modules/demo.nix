@@ -2,7 +2,7 @@
 let
   types = lib.types;
 in {
-  plugins = with pkgs.neovimPlugins; [ telescope ohMyVim ];
+  plugins = with pkgs.neovimPlugins; [ ohMyVim ];
 
   vim.o = {
     # make sure file encoding is utf-8
