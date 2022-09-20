@@ -32,6 +32,23 @@
         "type": "github"
       }
     },
+    "luaSnip": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1663664003,
+        "narHash": "sha256-56x4Eke/7Cdn4/8T0SM73WpDqBSFq1vFY5VdkNlUBwI=",
+        "owner": "L3MON4D3",
+        "repo": "LuaSnip",
+        "rev": "d36c063b7f6e701852f7880f1314656592a61b4f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "L3MON4D3",
+        "ref": "master",
+        "repo": "LuaSnip",
+        "type": "github"
+      }
+    },
     "lualine": {
       "flake": false,
       "locked": {
@@ -203,6 +220,7 @@
       "inputs": {
         "cmp-nvim-lsp": "cmp-nvim-lsp",
         "flake-utils": "flake-utils",
+        "luaSnip": "luaSnip",
         "lualine": "lualine",
         "neovim": "neovim",
         "nixpkgs": "nixpkgs",

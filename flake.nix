@@ -65,6 +65,11 @@
       url = "github:hrsh7th/cmp-nvim-lsp?ref=main";
       flake = false;
     };
+
+    luaSnip = {
+      url = "github:L3MON4D3/LuaSnip?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:
