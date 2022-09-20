@@ -80,6 +80,11 @@
       url = "github:nvim-treesitter/nvim-treesitter?ref=master";
       flake = false;
     };
+
+    nvim-treesitter-refactor = {
+      url = "github:nvim-treesitter/nvim-treesitter-refactor?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:

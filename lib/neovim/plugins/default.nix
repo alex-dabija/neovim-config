@@ -30,6 +30,7 @@ in rec {
       luaSnip
       cmp_luasnip
       nvim-treesitter
+      nvim-treesitter-refactor
     ];
   };
 
@@ -88,5 +89,10 @@ in rec {
   nvim-treesitter = plugin {
     pname = "nvim-treesitter";
     src = inputs.nvim-treesitter;
+  };
+
+  nvim-treesitter-refactor = plugin {
+    pname = "nvim-treesitter-refactor";
+    src = inputs.nvim-treesitter-refactor;
   };
 }
