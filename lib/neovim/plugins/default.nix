@@ -15,7 +15,7 @@ in rec {
     src = inputs.popup;
   };
 
-  ohMyVim = plugin {
+  oh-my-vim = plugin {
     pname = "oh-my-vim";
     src = inputs.ohMyVim;
     dependencies = [

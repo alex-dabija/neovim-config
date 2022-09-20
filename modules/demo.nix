@@ -2,7 +2,7 @@
 let
   types = lib.types;
 in {
-  plugins = with pkgs.neovimPlugins; [ ohMyVim ];
+  plugins = with pkgs.neovimPlugins; [ oh-my-vim ];
 
   vim.g.mapleader = ",";
 

@@ -41,7 +41,7 @@
       flake = false;
     };
 
-    ohMyVim = {
+    oh-my-vim = {
       url = "git+https://gitlab.tools.kbee.xyz/alex/oh-my-vim.git?ref=lua-config";
       flake = false;
     };

@@ -98,7 +98,7 @@
         "type": "github"
       }
     },
-    "ohMyVim": {
+    "oh-my-vim": {
       "flake": false,
       "locked": {
         "lastModified": 1660328394,
@@ -156,7 +156,7 @@
         "nixpkgs": "nixpkgs",
         "nvim-lspconfig": "nvim-lspconfig",
         "nvim-web-devicons": "nvim-web-devicons",
-        "ohMyVim": "ohMyVim",
+        "oh-my-vim": "oh-my-vim",
         "plenary": "plenary",
         "popup": "popup",
         "telescope": "telescope",
