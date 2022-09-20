@@ -18,7 +18,17 @@ in rec {
   ohMyVim = plugin {
     pname = "oh-my-vim";
     src = inputs.ohMyVim;
-    dependencies = [ popup telescope telescope-ui-select ];
+    dependencies = [
+      popup
+      nvim-web-devicons
+      telescope
+      telescope-ui-select
+    ];
+  };
+
+  nvim-web-devicons = plugin {
+    pname = "nvim-web-devicons";
+    src = inputs.nvim-web-devicons;
   };
 
   telescope = plugin {

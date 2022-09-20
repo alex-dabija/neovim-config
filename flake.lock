@@ -64,6 +64,23 @@
         "type": "github"
       }
     },
+    "nvim-web-devicons": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1663532214,
+        "narHash": "sha256-e8FP68mEmPAEbk+rYEKKGi0ZTJHDCPxrulnivkzInXk=",
+        "owner": "kyazdani42",
+        "repo": "nvim-web-devicons",
+        "rev": "969728506c0175644a1d448f55e311ccdada7eaf",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kyazdani42",
+        "ref": "master",
+        "repo": "nvim-web-devicons",
+        "type": "github"
+      }
+    },
     "ohMyVim": {
       "flake": false,
       "locked": {
@@ -120,6 +137,7 @@
         "lualine": "lualine",
         "neovim": "neovim",
         "nixpkgs": "nixpkgs",
+        "nvim-web-devicons": "nvim-web-devicons",
         "ohMyVim": "ohMyVim",
         "plenary": "plenary",
         "popup": "popup",

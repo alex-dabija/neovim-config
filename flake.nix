@@ -21,6 +21,11 @@
       flake = false;
     };
 
+    nvim-web-devicons = {
+      url = "github:kyazdani42/nvim-web-devicons?ref=master";
+      flake = false;
+    };
+
     telescope = {
       url = "github:nvim-telescope/telescope.nvim";
       flake = false;
