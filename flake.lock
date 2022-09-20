@@ -17,6 +17,23 @@
         "type": "github"
       }
     },
+    "cmp_luasnip": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1651433493,
+        "narHash": "sha256-8ocJY5qeAJXFSuTnavXX6NvZyAB0EEn2Y+amrWp8B1Y=",
+        "owner": "saadparwaiz1",
+        "repo": "cmp_luasnip",
+        "rev": "a9de941bcbda508d0a45d28ae366bb3f08db2e36",
+        "type": "github"
+      },
+      "original": {
+        "owner": "saadparwaiz1",
+        "ref": "master",
+        "repo": "cmp_luasnip",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "locked": {
         "lastModified": 1659877975,
@@ -219,6 +236,7 @@
     "root": {
       "inputs": {
         "cmp-nvim-lsp": "cmp-nvim-lsp",
+        "cmp_luasnip": "cmp_luasnip",
         "flake-utils": "flake-utils",
         "luaSnip": "luaSnip",
         "lualine": "lualine",

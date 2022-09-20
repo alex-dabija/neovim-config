@@ -70,6 +70,11 @@
       url = "github:L3MON4D3/LuaSnip?ref=master";
       flake = false;
     };
+
+    cmp_luasnip = {
+      url = "github:saadparwaiz1/cmp_luasnip?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:

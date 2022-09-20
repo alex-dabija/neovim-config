@@ -28,6 +28,7 @@ in rec {
       nvim-cmp
       cmp-nvim-lsp
       luaSnip
+      cmp_luasnip
     ];
   };
 
@@ -76,5 +77,10 @@ in rec {
   luaSnip = plugin {
     pname = "luaSnip";
     src = inputs.luaSnip;
+  };
+
+  cmp_luasnip = plugin {
+    pname = "cmp_luasnip";
+    src = inputs.cmp_luasnip;
   };
 }
