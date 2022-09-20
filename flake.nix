@@ -60,6 +60,11 @@
       url = "github:hrsh7th/nvim-cmp?ref=main";
       flake = false;
     };
+
+    cmp-nvim-lsp = {
+      url = "github:hrsh7th/cmp-nvim-lsp?ref=main";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:

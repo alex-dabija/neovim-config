@@ -26,6 +26,7 @@ in rec {
       nvim-lspconfig
       nvim-lightbulb
       nvim-cmp
+      cmp-nvim-lsp
     ];
   };
 
@@ -64,5 +65,10 @@ in rec {
   nvim-cmp = plugin {
     pname = "nvim-cmp";
     src = inputs.nvim-cmp;
+  };
+
+  cmp-nvim-lsp = plugin {
+    pname = "cmp-nvim-lsp";
+    src = inputs.cmp-nvim-lsp;
   };
 }

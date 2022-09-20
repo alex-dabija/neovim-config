@@ -1,5 +1,22 @@
 {
   "nodes": {
+    "cmp-nvim-lsp": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1652705110,
+        "narHash": "sha256-19Ka4EQhqo//IMjJ/DnXiHsevVWFy2M90oSjmBFfCO0=",
+        "owner": "hrsh7th",
+        "repo": "cmp-nvim-lsp",
+        "rev": "affe808a5c56b71630f17aa7c38e15c59fd648a8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "hrsh7th",
+        "ref": "main",
+        "repo": "cmp-nvim-lsp",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "locked": {
         "lastModified": 1659877975,
@@ -184,6 +201,7 @@
     },
     "root": {
       "inputs": {
+        "cmp-nvim-lsp": "cmp-nvim-lsp",
         "flake-utils": "flake-utils",
         "lualine": "lualine",
         "neovim": "neovim",
