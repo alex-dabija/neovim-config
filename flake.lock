@@ -64,6 +64,23 @@
         "type": "github"
       }
     },
+    "nvim-lspconfig": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1663166903,
+        "narHash": "sha256-SAtVRAPJIs1ax48nLieZ+X2jKJTZl8aKOCKbd8H6eWc=",
+        "owner": "neovim",
+        "repo": "nvim-lspconfig",
+        "rev": "51775b12cfbf1b6462c7b13cd020cc09e6767aea",
+        "type": "github"
+      },
+      "original": {
+        "owner": "neovim",
+        "ref": "master",
+        "repo": "nvim-lspconfig",
+        "type": "github"
+      }
+    },
     "nvim-web-devicons": {
       "flake": false,
       "locked": {
@@ -137,6 +154,7 @@
         "lualine": "lualine",
         "neovim": "neovim",
         "nixpkgs": "nixpkgs",
+        "nvim-lspconfig": "nvim-lspconfig",
         "nvim-web-devicons": "nvim-web-devicons",
         "ohMyVim": "ohMyVim",
         "plenary": "plenary",

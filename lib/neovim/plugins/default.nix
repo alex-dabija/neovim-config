@@ -23,6 +23,7 @@ in rec {
       nvim-web-devicons
       telescope
       telescope-ui-select
+      nvim-lspconfig
     ];
   };
 
@@ -46,5 +47,10 @@ in rec {
   lualine = plugin {
     pname = "lualine.nvim";
     src = inputs.lualine;
+  };
+
+  nvim-lspconfig = plugin {
+    pname = "nvim-lspconfig";
+    src = inputs.nvim-lspconfig;
   };
 }
