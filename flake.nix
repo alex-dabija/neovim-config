@@ -55,6 +55,11 @@
       url = "github:kosayoda/nvim-lightbulb?ref=master";
       flake = false;
     };
+
+    nvim-cmp = {
+      url = "github:hrsh7th/nvim-cmp?ref=main";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:

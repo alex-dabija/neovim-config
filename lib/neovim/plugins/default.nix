@@ -25,6 +25,7 @@ in rec {
       telescope-ui-select
       nvim-lspconfig
       nvim-lightbulb
+      nvim-cmp
     ];
   };
 
@@ -58,5 +59,10 @@ in rec {
   nvim-lightbulb = plugin {
     pname = "nvim-lightbulb";
     src = inputs.nvim-lightbulb;
+  };
+
+  nvim-cmp = plugin {
+    pname = "nvim-cmp";
+    src = inputs.nvim-cmp;
   };
 }
