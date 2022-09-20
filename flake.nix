@@ -50,6 +50,11 @@
       url = "github:neovim/nvim-lspconfig?ref=master";
       flake = false;
     };
+
+    nvim-lightbulb = {
+      url = "github:kosayoda/nvim-lightbulb?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:

@@ -17,13 +17,14 @@ in rec {
 
   oh-my-vim = plugin {
     pname = "oh-my-vim";
-    src = inputs.ohMyVim;
+    src = inputs.oh-my-vim;
     dependencies = [
       popup
       nvim-web-devicons
       telescope
       telescope-ui-select
       nvim-lspconfig
+      nvim-lightbulb
     ];
   };
 
@@ -52,5 +53,10 @@ in rec {
   nvim-lspconfig = plugin {
     pname = "nvim-lspconfig";
     src = inputs.nvim-lspconfig;
+  };
+
+  nvim-lightbulb = plugin {
+    pname = "nvim-lightbulb";
+    src = inputs.nvim-lightbulb;
   };
 }

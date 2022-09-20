@@ -64,6 +64,23 @@
         "type": "github"
       }
     },
+    "nvim-lightbulb": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1661474119,
+        "narHash": "sha256-nw6H/dS4dHdrobnrfJVa8urWrMnbTWrA5bQJy9xbKXY=",
+        "owner": "kosayoda",
+        "repo": "nvim-lightbulb",
+        "rev": "56b9ce31ec9d09d560fe8787c0920f76bc208297",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kosayoda",
+        "ref": "master",
+        "repo": "nvim-lightbulb",
+        "type": "github"
+      }
+    },
     "nvim-lspconfig": {
       "flake": false,
       "locked": {
@@ -154,6 +171,7 @@
         "lualine": "lualine",
         "neovim": "neovim",
         "nixpkgs": "nixpkgs",
+        "nvim-lightbulb": "nvim-lightbulb",
         "nvim-lspconfig": "nvim-lspconfig",
         "nvim-web-devicons": "nvim-web-devicons",
         "oh-my-vim": "oh-my-vim",
