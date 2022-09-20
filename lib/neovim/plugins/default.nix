@@ -31,6 +31,7 @@ in rec {
       cmp_luasnip
       nvim-treesitter
       nvim-treesitter-refactor
+      nvim-treesitter-textobjects
     ];
   };
 
@@ -94,5 +95,10 @@ in rec {
   nvim-treesitter-refactor = plugin {
     pname = "nvim-treesitter-refactor";
     src = inputs.nvim-treesitter-refactor;
+  };
+
+  nvim-treesitter-textobjects = plugin {
+    pname = "nvim-treesitter-textobjects";
+    src = inputs.nvim-treesitter-textobjects;
   };
 }

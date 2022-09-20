@@ -85,6 +85,11 @@
       url = "github:nvim-treesitter/nvim-treesitter-refactor?ref=master";
       flake = false;
     };
+
+    nvim-treesitter-textobjects = {
+      url = "github:nvim-treesitter/nvim-treesitter-textobjects?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:
