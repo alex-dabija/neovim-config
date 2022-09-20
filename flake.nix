@@ -75,6 +75,11 @@
       url = "github:saadparwaiz1/cmp_luasnip?ref=master";
       flake = false;
     };
+
+    nvim-treesitter = {
+      url = "github:nvim-treesitter/nvim-treesitter?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:

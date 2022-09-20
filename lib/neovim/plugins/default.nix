@@ -29,6 +29,7 @@ in rec {
       cmp-nvim-lsp
       luaSnip
       cmp_luasnip
+      nvim-treesitter
     ];
   };
 
@@ -82,5 +83,10 @@ in rec {
   cmp_luasnip = plugin {
     pname = "cmp_luasnip";
     src = inputs.cmp_luasnip;
+  };
+
+  nvim-treesitter = plugin {
+    pname = "nvim-treesitter";
+    src = inputs.nvim-treesitter;
   };
 }
