@@ -4,6 +4,8 @@ let
 in {
   plugins = with pkgs.neovimPlugins; [ ohMyVim ];
 
+  vim.g.mapleader = ",";
+
   vim.o = {
     # make sure file encoding is utf-8
     fileencoding = "utf-8";
