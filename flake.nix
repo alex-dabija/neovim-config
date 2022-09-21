@@ -120,6 +120,11 @@
       url = "github:EdenEast/nightfox.nvim?ref=main";
       flake = false;
     };
+
+    nvim-tree = {
+      url = "github:kyazdani42/nvim-tree.lua?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:

@@ -183,6 +183,23 @@
         "type": "github"
       }
     },
+    "nvim-tree": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1663480849,
+        "narHash": "sha256-/GNQ2kRgz/osxDqovtGwwtYTKtpUz5qq8xpVVkt6ZRQ=",
+        "owner": "kyazdani42",
+        "repo": "nvim-tree.lua",
+        "rev": "3676e0b124c2a132857e2bbcf7f48f05228f1052",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kyazdani42",
+        "ref": "master",
+        "repo": "nvim-tree.lua",
+        "type": "github"
+      }
+    },
     "nvim-treesitter": {
       "flake": false,
       "locked": {
@@ -331,6 +348,7 @@
         "nvim-cmp": "nvim-cmp",
         "nvim-lightbulb": "nvim-lightbulb",
         "nvim-lspconfig": "nvim-lspconfig",
+        "nvim-tree": "nvim-tree",
         "nvim-treesitter": "nvim-treesitter",
         "nvim-treesitter-playground": "nvim-treesitter-playground",
         "nvim-treesitter-refactor": "nvim-treesitter-refactor",

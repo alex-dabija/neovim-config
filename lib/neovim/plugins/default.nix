@@ -38,6 +38,7 @@ in rec {
       theme-dracula
       theme-tokyonight
       theme-nightfox
+      nvim-tree
     ];
   };
 
@@ -136,5 +137,10 @@ in rec {
   theme-nightfox = plugin {
     pname = "theme-nightfox.nvim";
     src = inputs.theme-nightfox;
+  };
+
+  nvim-tree = plugin {
+    pname = "nvim-tree";
+    src = inputs.nvim-tree;
   };
 }
