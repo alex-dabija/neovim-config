@@ -35,6 +35,7 @@ in rec {
       nvim-treesitter-textobjects
       nvim-treesitter-playground
       neovim-session-manager
+      theme-dracula
     ];
   };
 
@@ -118,5 +119,10 @@ in rec {
   neovim-session-manager = plugin {
     pname = "neovim-session-manager";
     src = inputs.neovim-session-manager;
+  };
+
+  theme-dracula = plugin {
+    pname = "theme-dracula";
+    src = inputs.theme-dracula;
   };
 }

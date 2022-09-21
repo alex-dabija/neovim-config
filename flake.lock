@@ -341,7 +341,8 @@
         "popup": "popup",
         "telescope": "telescope",
         "telescope-tele-tabby": "telescope-tele-tabby",
-        "telescope-ui-select": "telescope-ui-select"
+        "telescope-ui-select": "telescope-ui-select",
+        "theme-dracula": "theme-dracula"
       }
     },
     "telescope": {
@@ -391,6 +392,23 @@
         "owner": "nvim-telescope",
         "ref": "master",
         "repo": "telescope-ui-select.nvim",
+        "type": "github"
+      }
+    },
+    "theme-dracula": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1648142054,
+        "narHash": "sha256-AuRyfG5FxRqeAN8Nek5VjSZQHAO6DYMfMe63yzOi8eM=",
+        "owner": "dracula",
+        "repo": "vim",
+        "rev": "d7723a842a6cfa2f62cf85530ab66eb418521dc2",
+        "type": "github"
+      },
+      "original": {
+        "owner": "dracula",
+        "ref": "master",
+        "repo": "vim",
         "type": "github"
       }
     }

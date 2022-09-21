@@ -105,6 +105,11 @@
       url = "github:Shatur/neovim-session-manager?ref=master";
       flake = false;
     };
+
+    theme-dracula = {
+      url = "github:dracula/vim?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:
