@@ -42,6 +42,7 @@ in rec {
       barbar
       lualine
       lualine-lsp-progress
+      vim-fugitive
     ];
   };
 
@@ -155,5 +156,10 @@ in rec {
   lualine-lsp-progress = plugin {
     pname = "lualine-lsp-progress";
     src = inputs.lualine-lsp-progress;
+  };
+
+  vim-fugitive = plugin {
+    pname = "vim-fugitive";
+    src = inputs.vim-fugitive;
   };
 }

@@ -399,7 +399,8 @@
         "telescope-ui-select": "telescope-ui-select",
         "theme-dracula": "theme-dracula",
         "theme-nightfox": "theme-nightfox",
-        "theme-tokyonight": "theme-tokyonight"
+        "theme-tokyonight": "theme-tokyonight",
+        "vim-fugitive": "vim-fugitive"
       }
     },
     "telescope": {
@@ -500,6 +501,23 @@
         "owner": "folke",
         "ref": "main",
         "repo": "tokyonight.nvim",
+        "type": "github"
+      }
+    },
+    "vim-fugitive": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662284293,
+        "narHash": "sha256-IzsvDf7y91iV3XdrXW2U5WTdSmuALlpVO113h7Ovuac=",
+        "owner": "tpope",
+        "repo": "vim-fugitive",
+        "rev": "dd8107cabf5fe85df94d5eedcae52415e543f208",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tpope",
+        "ref": "master",
+        "repo": "vim-fugitive",
         "type": "github"
       }
     }

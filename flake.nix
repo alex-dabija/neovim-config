@@ -135,6 +135,11 @@
       url = "github:arkav/lualine-lsp-progress?ref=master";
       flake = false;
     };
+
+    vim-fugitive = {
+      url = "github:tpope/vim-fugitive?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:
