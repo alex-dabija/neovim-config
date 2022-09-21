@@ -36,6 +36,7 @@ in rec {
       nvim-treesitter-playground
       neovim-session-manager
       theme-dracula
+      theme-tokyonight
     ];
   };
 
@@ -124,5 +125,10 @@ in rec {
   theme-dracula = plugin {
     pname = "theme-dracula";
     src = inputs.theme-dracula;
+  };
+
+  theme-tokyonight = plugin {
+    pname = "theme-tokyonight.nvim";
+    src = inputs.theme-tokyonight;
   };
 }

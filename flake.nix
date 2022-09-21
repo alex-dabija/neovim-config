@@ -110,6 +110,11 @@
       url = "github:dracula/vim?ref=master";
       flake = false;
     };
+
+    theme-tokyonight = {
+      url = "github:folke/tokyonight.nvim?ref=main";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:
