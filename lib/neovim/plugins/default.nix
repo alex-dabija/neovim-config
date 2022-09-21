@@ -48,6 +48,7 @@ in rec {
       comment-nvim
       nvim-colorizer
       hop-nvim
+      vim-oscyank
     ];
   };
 
@@ -191,5 +192,10 @@ in rec {
   hop-nvim = plugin {
     pname = "hop.nvim";
     src = inputs.hop-nvim;
+  };
+
+  vim-oscyank = plugin {
+    pname = "vim-oscyank";
+    src = inputs.vim-oscyank;
   };
 }

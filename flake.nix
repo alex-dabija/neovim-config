@@ -165,6 +165,11 @@
       url = "github:phaazon/hop.nvim?ref=master";
       flake = false;
     };
+
+    vim-oscyank = {
+      url = "github:ojroques/vim-oscyank?ref=main";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:
