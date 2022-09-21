@@ -99,6 +99,23 @@
         "type": "github"
       }
     },
+    "neovim-session-manager": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1663070618,
+        "narHash": "sha256-TvUsBG5vV5xbHbzGJgRm0suJ3k/XR9zgrdmCpqRFkt8=",
+        "owner": "Shatur",
+        "repo": "neovim-session-manager",
+        "rev": "3e8410cdad6e65c49c70d519477912035a4e91b8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Shatur",
+        "ref": "master",
+        "repo": "neovim-session-manager",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1662019588,
@@ -309,6 +326,7 @@
         "luaSnip": "luaSnip",
         "lualine": "lualine",
         "neovim": "neovim",
+        "neovim-session-manager": "neovim-session-manager",
         "nixpkgs": "nixpkgs",
         "nvim-cmp": "nvim-cmp",
         "nvim-lightbulb": "nvim-lightbulb",

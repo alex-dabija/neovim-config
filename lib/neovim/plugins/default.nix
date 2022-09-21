@@ -34,6 +34,7 @@ in rec {
       nvim-treesitter-refactor
       nvim-treesitter-textobjects
       nvim-treesitter-playground
+      neovim-session-manager
     ];
   };
 
@@ -112,5 +113,10 @@ in rec {
   nvim-treesitter-playground = plugin {
     pname = "nvim-treesitter-playground";
     src = inputs.nvim-treesitter-playground;
+  };
+
+  neovim-session-manager = plugin {
+    pname = "neovim-session-manager";
+    src = inputs.neovim-session-manager;
   };
 }

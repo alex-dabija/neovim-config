@@ -100,6 +100,11 @@
       url = "github:nvim-treesitter/playground?ref=master";
       flake = false;
     };
+
+    neovim-session-manager = {
+      url = "github:Shatur/neovim-session-manager?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:
