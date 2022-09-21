@@ -115,6 +115,11 @@
       url = "github:folke/tokyonight.nvim?ref=main";
       flake = false;
     };
+
+    theme-nightfox = {
+      url = "github:EdenEast/nightfox.nvim?ref=main";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:

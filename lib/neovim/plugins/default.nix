@@ -37,6 +37,7 @@ in rec {
       neovim-session-manager
       theme-dracula
       theme-tokyonight
+      theme-nightfox
     ];
   };
 
@@ -130,5 +131,10 @@ in rec {
   theme-tokyonight = plugin {
     pname = "theme-tokyonight.nvim";
     src = inputs.theme-tokyonight;
+  };
+
+  theme-nightfox = plugin {
+    pname = "theme-nightfox.nvim";
+    src = inputs.theme-nightfox;
   };
 }

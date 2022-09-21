@@ -343,6 +343,7 @@
         "telescope-tele-tabby": "telescope-tele-tabby",
         "telescope-ui-select": "telescope-ui-select",
         "theme-dracula": "theme-dracula",
+        "theme-nightfox": "theme-nightfox",
         "theme-tokyonight": "theme-tokyonight"
       }
     },
@@ -410,6 +411,23 @@
         "owner": "dracula",
         "ref": "master",
         "repo": "vim",
+        "type": "github"
+      }
+    },
+    "theme-nightfox": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662381234,
+        "narHash": "sha256-/VPNbhs6QII+2hx9aSW+mbtbpzVth8lxP6viSWMp0R0=",
+        "owner": "EdenEast",
+        "repo": "nightfox.nvim",
+        "rev": "83f6ee9e646c803aa14c7293ad7775900f24ea1a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "EdenEast",
+        "ref": "main",
+        "repo": "nightfox.nvim",
         "type": "github"
       }
     },
