@@ -32,6 +32,7 @@ in rec {
       nvim-treesitter
       nvim-treesitter-refactor
       nvim-treesitter-textobjects
+      nvim-treesitter-playground
     ];
   };
 
@@ -100,5 +101,10 @@ in rec {
   nvim-treesitter-textobjects = plugin {
     pname = "nvim-treesitter-textobjects";
     src = inputs.nvim-treesitter-textobjects;
+  };
+
+  nvim-treesitter-playground = plugin {
+    pname = "nvim-treesitter-playground";
+    src = inputs.nvim-treesitter-playground;
   };
 }

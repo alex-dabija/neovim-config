@@ -90,6 +90,11 @@
       url = "github:nvim-treesitter/nvim-treesitter-textobjects?ref=master";
       flake = false;
     };
+
+    nvim-treesitter-playground = {
+      url = "github:nvim-treesitter/playground?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:
