@@ -40,6 +40,8 @@ in rec {
       theme-nightfox
       nvim-tree
       barbar
+      lualine
+      lualine-lsp-progress
     ];
   };
 
