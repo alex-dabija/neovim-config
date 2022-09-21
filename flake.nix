@@ -125,6 +125,11 @@
       url = "github:kyazdani42/nvim-tree.lua?ref=master";
       flake = false;
     };
+
+    barbar = {
+      url = "github:romgrk/barbar.nvim?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:

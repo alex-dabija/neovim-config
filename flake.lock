@@ -1,5 +1,22 @@
 {
   "nodes": {
+    "barbar": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662051456,
+        "narHash": "sha256-QG9G4YZj/CQMvXuBHiqh2Evvs0iMluOasPJSFjWvsVU=",
+        "owner": "romgrk",
+        "repo": "barbar.nvim",
+        "rev": "c41ad6e3f68c2c9f6aa268c6232cdef885107303",
+        "type": "github"
+      },
+      "original": {
+        "owner": "romgrk",
+        "ref": "master",
+        "repo": "barbar.nvim",
+        "type": "github"
+      }
+    },
     "cmp-nvim-lsp": {
       "flake": false,
       "locked": {
@@ -337,6 +354,7 @@
     },
     "root": {
       "inputs": {
+        "barbar": "barbar",
         "cmp-nvim-lsp": "cmp-nvim-lsp",
         "cmp_luasnip": "cmp_luasnip",
         "flake-utils": "flake-utils",

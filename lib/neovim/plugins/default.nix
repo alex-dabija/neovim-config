@@ -39,6 +39,7 @@ in rec {
       theme-tokyonight
       theme-nightfox
       nvim-tree
+      barbar
     ];
   };
 
@@ -142,5 +143,10 @@ in rec {
   nvim-tree = plugin {
     pname = "nvim-tree";
     src = inputs.nvim-tree;
+  };
+
+  barbar = plugin {
+    pname = "barbar.nvim";
+    src = inputs.barbar;
   };
 }
