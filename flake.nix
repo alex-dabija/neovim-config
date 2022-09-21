@@ -36,6 +36,11 @@
       flake = false;
     };
 
+    telescope-tele-tabby = {
+      url = "github:TC72/telescope-tele-tabby.nvim?ref=main";
+      flake = false;
+    };
+
     lualine = {
       url = "github:nvim-lualine/lualine.nvim";
       flake = false;

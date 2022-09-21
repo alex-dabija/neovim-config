@@ -23,6 +23,7 @@ in rec {
       nvim-web-devicons
       telescope
       telescope-ui-select
+      telescope-tele-tabby
       nvim-lspconfig
       nvim-lightbulb
       nvim-cmp
@@ -51,6 +52,11 @@ in rec {
     pname = "telescope-ui-select.nvim";
     src = inputs.telescope-ui-select;
     dependencies = [ telescope ];
+  };
+
+  telescope-tele-tabby = plugin {
+    pname = "telescope-tele-tabby.nvim";
+    src = inputs.telescope-tele-tabby;
   };
 
   lualine = plugin {

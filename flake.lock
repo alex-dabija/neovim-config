@@ -322,6 +322,7 @@
         "plenary": "plenary",
         "popup": "popup",
         "telescope": "telescope",
+        "telescope-tele-tabby": "telescope-tele-tabby",
         "telescope-ui-select": "telescope-ui-select"
       }
     },
@@ -338,6 +339,23 @@
       "original": {
         "owner": "nvim-telescope",
         "repo": "telescope.nvim",
+        "type": "github"
+      }
+    },
+    "telescope-tele-tabby": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1650874175,
+        "narHash": "sha256-AnqtbI4PvxIviSqyu7vthXKQqlOtJR7ylUVPDLhr1i4=",
+        "owner": "TC72",
+        "repo": "telescope-tele-tabby.nvim",
+        "rev": "cfbafaf5961f598f897f6daa38d22ae6cca804c4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "TC72",
+        "ref": "main",
+        "repo": "telescope-tele-tabby.nvim",
         "type": "github"
       }
     },
