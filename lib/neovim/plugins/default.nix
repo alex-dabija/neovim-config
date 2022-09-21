@@ -45,6 +45,7 @@ in rec {
       vim-fugitive
       vim-rhubarb
       gitsigns
+      comment-nvim
     ];
   };
 
@@ -173,5 +174,10 @@ in rec {
   gitsigns = plugin {
     pname = "gitsigns.nvim";
     src = inputs.gitsigns;
+  };
+
+  comment-nvim = plugin {
+    pname = "comment-nvim";
+    src = inputs.comment-nvim;
   };
 }

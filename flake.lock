@@ -51,6 +51,23 @@
         "type": "github"
       }
     },
+    "comment-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1662294177,
+        "narHash": "sha256-3oC/gFRLBRs3O74JNiRxhdTnSQ8s5U1uKzV4siQ3Jts=",
+        "owner": "numToStr",
+        "repo": "Comment.nvim",
+        "rev": "30d23aa2e1ba204a74d5dfb99777e9acbe9dd2d6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numToStr",
+        "ref": "master",
+        "repo": "Comment.nvim",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "locked": {
         "lastModified": 1659877975,
@@ -392,6 +409,7 @@
         "barbar": "barbar",
         "cmp-nvim-lsp": "cmp-nvim-lsp",
         "cmp_luasnip": "cmp_luasnip",
+        "comment-nvim": "comment-nvim",
         "flake-utils": "flake-utils",
         "gitsigns": "gitsigns",
         "luaSnip": "luaSnip",

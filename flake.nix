@@ -150,6 +150,11 @@
       url = "github:lewis6991/gitsigns.nvim?ref=main";
       flake = false;
     };
+
+    comment-nvim = {
+      url = "github:numToStr/Comment.nvim?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:
