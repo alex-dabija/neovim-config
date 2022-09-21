@@ -43,6 +43,7 @@ in rec {
       lualine
       lualine-lsp-progress
       vim-fugitive
+      vim-rhubarb
     ];
   };
 
@@ -161,5 +162,10 @@ in rec {
   vim-fugitive = plugin {
     pname = "vim-fugitive";
     src = inputs.vim-fugitive;
+  };
+
+  vim-rhubarb = plugin {
+    pname = "vim-rhubarb";
+    src = inputs.vim-rhubarb;
   };
 }

@@ -400,7 +400,8 @@
         "theme-dracula": "theme-dracula",
         "theme-nightfox": "theme-nightfox",
         "theme-tokyonight": "theme-tokyonight",
-        "vim-fugitive": "vim-fugitive"
+        "vim-fugitive": "vim-fugitive",
+        "vim-rhubarb": "vim-rhubarb"
       }
     },
     "telescope": {
@@ -518,6 +519,23 @@
         "owner": "tpope",
         "ref": "master",
         "repo": "vim-fugitive",
+        "type": "github"
+      }
+    },
+    "vim-rhubarb": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1658927824,
+        "narHash": "sha256-nNzQRw0it/qMXg5xzYDm1oi6y9szHSrzXdXK1683hbA=",
+        "owner": "tpope",
+        "repo": "vim-rhubarb",
+        "rev": "cad60fe382f3f501bbb28e113dfe8c0de6e77c75",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tpope",
+        "ref": "master",
+        "repo": "vim-rhubarb",
         "type": "github"
       }
     }

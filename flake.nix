@@ -140,6 +140,11 @@
       url = "github:tpope/vim-fugitive?ref=master";
       flake = false;
     };
+
+    vim-rhubarb = {
+      url = "github:tpope/vim-rhubarb?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:
