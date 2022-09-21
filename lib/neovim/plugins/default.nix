@@ -49,6 +49,7 @@ in rec {
       nvim-colorizer
       hop-nvim
       vim-oscyank
+      nvim-neoclip
     ];
   };
 
@@ -197,5 +198,10 @@ in rec {
   vim-oscyank = plugin {
     pname = "vim-oscyank";
     src = inputs.vim-oscyank;
+  };
+
+  nvim-neoclip = plugin {
+    pname = "nvim-neoclip.lua";
+    src = inputs.nvim-neoclip;
   };
 }

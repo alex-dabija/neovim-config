@@ -286,6 +286,23 @@
         "type": "github"
       }
     },
+    "nvim-neoclip": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1663705553,
+        "narHash": "sha256-o23gl64OpeLBUOzPdFpdVsFNT9YQpULOwUACGjFndXk=",
+        "owner": "AckslD",
+        "repo": "nvim-neoclip.lua",
+        "rev": "937f941a135013a3a0af95434979b177a0f28852",
+        "type": "github"
+      },
+      "original": {
+        "owner": "AckslD",
+        "ref": "main",
+        "repo": "nvim-neoclip.lua",
+        "type": "github"
+      }
+    },
     "nvim-tree": {
       "flake": false,
       "locked": {
@@ -457,6 +474,7 @@
         "nvim-colorizer": "nvim-colorizer",
         "nvim-lightbulb": "nvim-lightbulb",
         "nvim-lspconfig": "nvim-lspconfig",
+        "nvim-neoclip": "nvim-neoclip",
         "nvim-tree": "nvim-tree",
         "nvim-treesitter": "nvim-treesitter",
         "nvim-treesitter-playground": "nvim-treesitter-playground",

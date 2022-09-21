@@ -170,6 +170,11 @@
       url = "github:ojroques/vim-oscyank?ref=main";
       flake = false;
     };
+
+    nvim-neoclip = {
+      url = "github:AckslD/nvim-neoclip.lua?ref=main";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:
