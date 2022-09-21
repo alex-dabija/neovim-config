@@ -44,6 +44,7 @@ in rec {
       lualine-lsp-progress
       vim-fugitive
       vim-rhubarb
+      gitsigns
     ];
   };
 
@@ -167,5 +168,10 @@ in rec {
   vim-rhubarb = plugin {
     pname = "vim-rhubarb";
     src = inputs.vim-rhubarb;
+  };
+
+  gitsigns = plugin {
+    pname = "gitsigns.nvim";
+    src = inputs.gitsigns;
   };
 }

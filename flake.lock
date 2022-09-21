@@ -66,6 +66,23 @@
         "type": "github"
       }
     },
+    "gitsigns": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1663543397,
+        "narHash": "sha256-FgNSwvW7Bk+eKutMj0zqEorJ3+ijCALtOXs2OYiSX1I=",
+        "owner": "lewis6991",
+        "repo": "gitsigns.nvim",
+        "rev": "f98c85e7c3d65a51f45863a34feb4849c82f240f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "lewis6991",
+        "ref": "main",
+        "repo": "gitsigns.nvim",
+        "type": "github"
+      }
+    },
     "luaSnip": {
       "flake": false,
       "locked": {
@@ -376,6 +393,7 @@
         "cmp-nvim-lsp": "cmp-nvim-lsp",
         "cmp_luasnip": "cmp_luasnip",
         "flake-utils": "flake-utils",
+        "gitsigns": "gitsigns",
         "luaSnip": "luaSnip",
         "lualine": "lualine",
         "lualine-lsp-progress": "lualine-lsp-progress",

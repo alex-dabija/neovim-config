@@ -145,6 +145,11 @@
       url = "github:tpope/vim-rhubarb?ref=master";
       flake = false;
     };
+
+    gitsigns = {
+      url = "github:lewis6991/gitsigns.nvim?ref=main";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:
