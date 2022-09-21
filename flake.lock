@@ -99,6 +99,23 @@
         "type": "github"
       }
     },
+    "lualine-lsp-progress": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1634947677,
+        "narHash": "sha256-8HMtydFDzTxsuKvce+bIra9vZ9zHfEBHyR346W635b8=",
+        "owner": "arkav",
+        "repo": "lualine-lsp-progress",
+        "rev": "56842d097245a08d77912edf5f2a69ba29f275d7",
+        "type": "github"
+      },
+      "original": {
+        "owner": "arkav",
+        "ref": "master",
+        "repo": "lualine-lsp-progress",
+        "type": "github"
+      }
+    },
     "neovim": {
       "flake": false,
       "locked": {
@@ -360,6 +377,7 @@
         "flake-utils": "flake-utils",
         "luaSnip": "luaSnip",
         "lualine": "lualine",
+        "lualine-lsp-progress": "lualine-lsp-progress",
         "neovim": "neovim",
         "neovim-session-manager": "neovim-session-manager",
         "nixpkgs": "nixpkgs",

@@ -41,11 +41,6 @@
       flake = false;
     };
 
-    lualine = {
-      url = "github:nvim-lualine/lualine.nvim";
-      flake = false;
-    };
-
     oh-my-vim = {
       url = "git+https://gitlab.tools.kbee.xyz/alex/oh-my-vim.git?ref=lua-config";
       flake = false;
@@ -128,6 +123,16 @@
 
     barbar = {
       url = "github:romgrk/barbar.nvim?ref=master";
+      flake = false;
+    };
+
+    lualine = {
+      url = "github:nvim-lualine/lualine.nvim";
+      flake = false;
+    };
+
+    lualine-lsp-progress = {
+      url = "github:arkav/lualine-lsp-progress?ref=master";
       flake = false;
     };
   };

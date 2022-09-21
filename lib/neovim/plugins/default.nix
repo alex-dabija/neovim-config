@@ -65,11 +65,6 @@ in rec {
     src = inputs.telescope-tele-tabby;
   };
 
-  lualine = plugin {
-    pname = "lualine.nvim";
-    src = inputs.lualine;
-  };
-
   nvim-lspconfig = plugin {
     pname = "nvim-lspconfig";
     src = inputs.nvim-lspconfig;
@@ -148,5 +143,15 @@ in rec {
   barbar = plugin {
     pname = "barbar.nvim";
     src = inputs.barbar;
+  };
+
+  lualine = plugin {
+    pname = "lualine.nvim";
+    src = inputs.lualine;
+  };
+
+  lualine-lsp-progress = plugin {
+    pname = "lualine-lsp-progress";
+    src = inputs.lualine-lsp-progress;
   };
 }
