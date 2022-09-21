@@ -50,6 +50,7 @@ in rec {
       hop-nvim
       vim-oscyank
       nvim-neoclip
+      vim-surround
     ];
   };
 
@@ -203,5 +204,10 @@ in rec {
   nvim-neoclip = plugin {
     pname = "nvim-neoclip.lua";
     src = inputs.nvim-neoclip;
+  };
+
+  vim-surround = plugin {
+    pname = "vim-surround";
+    src = inputs.vim-surround;
   };
 }

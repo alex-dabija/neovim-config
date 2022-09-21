@@ -175,6 +175,11 @@
       url = "github:AckslD/nvim-neoclip.lua?ref=main";
       flake = false;
     };
+
+    vim-surround = {
+      url = "github:tpope/vim-surround?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:
