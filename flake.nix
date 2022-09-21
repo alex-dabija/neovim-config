@@ -160,6 +160,11 @@
       url = "github:norcalli/nvim-colorizer.lua?ref=master";
       flake = false;
     };
+
+    hop-nvim = {
+      url = "github:phaazon/hop.nvim?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:

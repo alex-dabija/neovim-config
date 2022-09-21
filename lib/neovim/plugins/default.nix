@@ -47,6 +47,7 @@ in rec {
       gitsigns
       comment-nvim
       nvim-colorizer
+      hop-nvim
     ];
   };
 
@@ -185,5 +186,10 @@ in rec {
   nvim-colorizer = plugin {
     pname = "nvim-colorizer";
     src = inputs.nvim-colorizer;
+  };
+
+  hop-nvim = plugin {
+    pname = "hop.nvim";
+    src = inputs.hop-nvim;
   };
 }

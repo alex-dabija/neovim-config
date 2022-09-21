@@ -100,6 +100,23 @@
         "type": "github"
       }
     },
+    "hop-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1659230065,
+        "narHash": "sha256-rHoHSv5K/4Zb8friFtQGo562Avan2wmExm+SEztDF7k=",
+        "owner": "phaazon",
+        "repo": "hop.nvim",
+        "rev": "2a1b686aad85a3c241f8cd8fd42eb09c7de5ed79",
+        "type": "github"
+      },
+      "original": {
+        "owner": "phaazon",
+        "ref": "master",
+        "repo": "hop.nvim",
+        "type": "github"
+      }
+    },
     "luaSnip": {
       "flake": false,
       "locked": {
@@ -429,6 +446,7 @@
         "comment-nvim": "comment-nvim",
         "flake-utils": "flake-utils",
         "gitsigns": "gitsigns",
+        "hop-nvim": "hop-nvim",
         "luaSnip": "luaSnip",
         "lualine": "lualine",
         "lualine-lsp-progress": "lualine-lsp-progress",
