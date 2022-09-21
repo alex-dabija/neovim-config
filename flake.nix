@@ -155,6 +155,11 @@
       url = "github:numToStr/Comment.nvim?ref=master";
       flake = false;
     };
+
+    nvim-colorizer = {
+      url = "github:norcalli/nvim-colorizer.lua?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:

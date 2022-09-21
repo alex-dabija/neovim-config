@@ -46,6 +46,7 @@ in rec {
       vim-rhubarb
       gitsigns
       comment-nvim
+      nvim-colorizer
     ];
   };
 
@@ -179,5 +180,10 @@ in rec {
   comment-nvim = plugin {
     pname = "comment-nvim";
     src = inputs.comment-nvim;
+  };
+
+  nvim-colorizer = plugin {
+    pname = "nvim-colorizer";
+    src = inputs.nvim-colorizer;
   };
 }
