@@ -127,7 +127,7 @@
     };
 
     lualine = {
-      url = "github:nvim-lualine/lualine.nvim";
+      url = "github:nvim-lualine/lualine.nvim?ref=master";
       flake = false;
     };
 

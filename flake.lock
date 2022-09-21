@@ -95,6 +95,7 @@
       },
       "original": {
         "owner": "nvim-lualine",
+        "ref": "master",
         "repo": "lualine.nvim",
         "type": "github"
       }
