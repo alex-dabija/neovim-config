@@ -54,6 +54,7 @@ in rec {
       vim-repeat
       nvim-autopairs
       octo-nvim
+      nvim-notify
     ];
   };
 
@@ -227,5 +228,10 @@ in rec {
   octo-nvim = plugin {
     pname = "octo.nvim";
     src = inputs.octo-nvim;
+  };
+
+  nvim-notify = plugin {
+    pname = "nvim-notify";
+    src = inputs.nvim-notify;
   };
 }

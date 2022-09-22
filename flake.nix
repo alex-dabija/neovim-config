@@ -195,6 +195,11 @@
       url = "github:pwntester/octo.nvim?ref=master";
       flake = false;
     };
+
+    nvim-notify = {
+      url = "github:rcarriga/nvim-notify?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:

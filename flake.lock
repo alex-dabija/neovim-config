@@ -320,6 +320,23 @@
         "type": "github"
       }
     },
+    "nvim-notify": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1663619118,
+        "narHash": "sha256-oxDgIIwLuoF04HzLJGX/oBmTJMVQJThR0BUmlh0fTOE=",
+        "owner": "rcarriga",
+        "repo": "nvim-notify",
+        "rev": "7a9be08986b4d98dd685a6b40a62fcba19c1ad27",
+        "type": "github"
+      },
+      "original": {
+        "owner": "rcarriga",
+        "ref": "master",
+        "repo": "nvim-notify",
+        "type": "github"
+      }
+    },
     "nvim-tree": {
       "flake": false,
       "locked": {
@@ -510,6 +527,7 @@
         "nvim-lightbulb": "nvim-lightbulb",
         "nvim-lspconfig": "nvim-lspconfig",
         "nvim-neoclip": "nvim-neoclip",
+        "nvim-notify": "nvim-notify",
         "nvim-tree": "nvim-tree",
         "nvim-treesitter": "nvim-treesitter",
         "nvim-treesitter-playground": "nvim-treesitter-playground",
