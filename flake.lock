@@ -422,6 +422,23 @@
         "type": "github"
       }
     },
+    "octo-nvim": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1663144784,
+        "narHash": "sha256-F6toYlcplsccLQ0FZVJ7n83lAV/8DT0+VG9FlDv0mP4=",
+        "owner": "pwntester",
+        "repo": "octo.nvim",
+        "rev": "e634cd1b120af1d7f642081185782a24b49dc11f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "pwntester",
+        "ref": "master",
+        "repo": "octo.nvim",
+        "type": "github"
+      }
+    },
     "oh-my-vim": {
       "flake": false,
       "locked": {
@@ -499,6 +516,7 @@
         "nvim-treesitter-refactor": "nvim-treesitter-refactor",
         "nvim-treesitter-textobjects": "nvim-treesitter-textobjects",
         "nvim-web-devicons": "nvim-web-devicons",
+        "octo-nvim": "octo-nvim",
         "oh-my-vim": "oh-my-vim",
         "plenary": "plenary",
         "popup": "popup",

@@ -53,6 +53,7 @@ in rec {
       vim-surround
       vim-repeat
       nvim-autopairs
+      octo-nvim
     ];
   };
 
@@ -221,5 +222,10 @@ in rec {
   nvim-autopairs = plugin {
     pname = "nvim-autopairs";
     src = inputs.nvim-autopairs;
+  };
+
+  octo-nvim = plugin {
+    pname = "octo.nvim";
+    src = inputs.octo-nvim;
   };
 }

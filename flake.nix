@@ -190,6 +190,11 @@
       url = "github:windwp/nvim-autopairs?ref=master";
       flake = false;
     };
+
+    octo-nvim = {
+      url = "github:pwntester/octo.nvim?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:
