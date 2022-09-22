@@ -200,6 +200,11 @@
       url = "github:rcarriga/nvim-notify?ref=master";
       flake = false;
     };
+
+    nvim-legendary = {
+      url = "github:mrjones2014/legendary.nvim?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:

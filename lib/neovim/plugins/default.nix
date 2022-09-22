@@ -55,6 +55,7 @@ in rec {
       nvim-autopairs
       octo-nvim
       nvim-notify
+      nvim-legendary
     ];
   };
 
@@ -233,5 +234,10 @@ in rec {
   nvim-notify = plugin {
     pname = "nvim-notify";
     src = inputs.nvim-notify;
+  };
+
+  nvim-legendary = plugin {
+    pname = "nvim-legendary";
+    src = inputs.nvim-legendary;
   };
 }

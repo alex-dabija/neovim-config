@@ -269,6 +269,23 @@
         "type": "github"
       }
     },
+    "nvim-legendary": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1663067510,
+        "narHash": "sha256-QUyN0OiGeNRIH4aQqubki09+ZetFTOsLStnLZWWw5UM=",
+        "owner": "mrjones2014",
+        "repo": "legendary.nvim",
+        "rev": "a7ded867f33600ae7cefdcdd8cdb1ab486427b33",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mrjones2014",
+        "ref": "master",
+        "repo": "legendary.nvim",
+        "type": "github"
+      }
+    },
     "nvim-lightbulb": {
       "flake": false,
       "locked": {
@@ -524,6 +541,7 @@
         "nvim-autopairs": "nvim-autopairs",
         "nvim-cmp": "nvim-cmp",
         "nvim-colorizer": "nvim-colorizer",
+        "nvim-legendary": "nvim-legendary",
         "nvim-lightbulb": "nvim-lightbulb",
         "nvim-lspconfig": "nvim-lspconfig",
         "nvim-neoclip": "nvim-neoclip",
