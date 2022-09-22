@@ -180,6 +180,11 @@
       url = "github:tpope/vim-surround?ref=master";
       flake = false;
     };
+
+    vim-repeat = {
+      url = "github:tpope/vim-repeat?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:

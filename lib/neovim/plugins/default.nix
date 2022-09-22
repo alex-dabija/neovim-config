@@ -51,6 +51,7 @@ in rec {
       vim-oscyank
       nvim-neoclip
       vim-surround
+      vim-repeat
     ];
   };
 
@@ -209,5 +210,10 @@ in rec {
   vim-surround = plugin {
     pname = "vim-surround";
     src = inputs.vim-surround;
+  };
+
+  vim-repeat = plugin {
+    pname = "vim-repeat";
+    src = inputs.vim-repeat;
   };
 }

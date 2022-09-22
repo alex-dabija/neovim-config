@@ -492,6 +492,7 @@
         "theme-tokyonight": "theme-tokyonight",
         "vim-fugitive": "vim-fugitive",
         "vim-oscyank": "vim-oscyank",
+        "vim-repeat": "vim-repeat",
         "vim-rhubarb": "vim-rhubarb",
         "vim-surround": "vim-surround"
       }
@@ -628,6 +629,23 @@
         "owner": "ojroques",
         "ref": "main",
         "repo": "vim-oscyank",
+        "type": "github"
+      }
+    },
+    "vim-repeat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1611544268,
+        "narHash": "sha256-8rfZa3uKXB3TRCqaDHZ6DfzNbm7WaYnLvmTNzYtnKHg=",
+        "owner": "tpope",
+        "repo": "vim-repeat",
+        "rev": "24afe922e6a05891756ecf331f39a1f6743d3d5a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tpope",
+        "ref": "master",
+        "repo": "vim-repeat",
         "type": "github"
       }
     },
