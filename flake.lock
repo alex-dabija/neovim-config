@@ -476,11 +476,11 @@
     "oh-my-vim": {
       "flake": false,
       "locked": {
-        "lastModified": 1663870137,
-        "narHash": "sha256-7HX+XPbeYLm2APyQ9jv2INskS5ZzCty/ImxzQRiocVA=",
+        "lastModified": 1663870625,
+        "narHash": "sha256-Eux1dpJEQH5OoST5jH0CJTsYMHLZVJXsMhLS888oQ9I=",
         "ref": "nix-config",
-        "rev": "4a672f5493bfeaf92f300882c09f9869999cb84a",
-        "revCount": 302,
+        "rev": "bc79d89989bc6fde9666cf2b12246efbdfbb4011",
+        "revCount": 303,
         "type": "git",
         "url": "https://gitlab.tools.kbee.xyz/alex/oh-my-vim.git"
       },
