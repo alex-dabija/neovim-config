@@ -114,6 +114,27 @@ in rec {
   nvim-treesitter = plugin {
     pname = "nvim-treesitter";
     src = inputs.nvim-treesitter;
+    postPatch =
+      let
+        tree-sitter = pkgs.tree-sitter.withPlugins(p: with p; [
+          tree-sitter-c
+          tree-sitter-lua
+          tree-sitter-rust
+          tree-sitter-go
+          tree-sitter-python
+          tree-sitter-java
+          tree-sitter-scala
+          tree-sitter-markdown
+          tree-sitter-json
+          tree-sitter-yaml
+          tree-sitter-html
+          tree-sitter-nix
+        ]);
+      in
+        ''
+          rm -r parser
+          ln -s ${tree-sitter} parser
+        '';
   };
 
   nvim-treesitter-refactor = plugin {

@@ -42,7 +42,7 @@
     };
 
     oh-my-vim = {
-      url = "git+https://gitlab.tools.kbee.xyz/alex/oh-my-vim.git?ref=lua-config";
+      url = "git+https://gitlab.tools.kbee.xyz/alex/oh-my-vim.git?ref=nix-config";
       flake = false;
     };
 
