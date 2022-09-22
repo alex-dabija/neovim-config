@@ -4,6 +4,8 @@ let
 in {
   plugins = with pkgs.neovimPlugins; [ oh-my-vim ];
 
+  colorscheme = "nightfox";
+
   vim.g.mapleader = ",";
 
   vim.o = {

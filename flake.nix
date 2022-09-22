@@ -231,6 +231,7 @@
             ./modules/options.nix
             ./modules/wrapper.nix
             ./modules/demo.nix
+            ./modules/colorscheme.nix
           ];
           specialArgs = { inherit pkgs; inputs = self.inputs; };
         };
