@@ -52,6 +52,7 @@ in rec {
       nvim-neoclip
       vim-surround
       vim-repeat
+      nvim-autopairs
     ];
   };
 
@@ -215,5 +216,10 @@ in rec {
   vim-repeat = plugin {
     pname = "vim-repeat";
     src = inputs.vim-repeat;
+  };
+
+  nvim-autopairs = plugin {
+    pname = "nvim-autopairs";
+    src = inputs.nvim-autopairs;
   };
 }

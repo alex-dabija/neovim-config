@@ -185,6 +185,11 @@
       url = "github:tpope/vim-repeat?ref=master";
       flake = false;
     };
+
+    nvim-autopairs = {
+      url = "github:windwp/nvim-autopairs?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:
