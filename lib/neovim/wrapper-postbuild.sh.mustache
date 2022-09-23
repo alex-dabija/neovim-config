@@ -32,5 +32,10 @@ makeWrapper "${wrapper_args[@]}"
 
 
 {{#rustAnalyzer}}
-makeWrapper "{{{rustAnalyzer}}}/bin/rust-analyzer" "${out}/bin/rust-analyzer"
+ln -s "{{{rustAnalyzer}}}/bin/rust-analyzer" "${out}/bin/rust-analyzer"
 {{/rustAnalyzer}}
+
+
+{{#gopls}}
+ln -s "{{{gopls}}}/bin/gopls" "${out}/bin/gopls"
+{{/gopls}}

@@ -8,6 +8,7 @@ neovim:
       plugins ? [],
       initLua ? "",
       withRustAnalyzer ? false,
+      withGopls ? false,
     }@args:
       let
         pluginUtils = import ./plugins/utils.nix { inherit pkgs lib stdenv; };
@@ -20,6 +21,7 @@ neovim:
           pluginsDir = pluginUtils.packDir "nix-packer" plugins;
           initLua = "${writeText "init.lua" initLua}";
           rustAnalyzer = if withRustAnalyzer then pkgs.rust-analyzer.outPath else "";
+          gopls = if withGopls then pkgs.gopls.outPath else "";
         };
 
         postBuildScript = lib.templateExecutableFile "wrapper-postbuild.sh" ./wrapper-postbuild.sh.mustache context;

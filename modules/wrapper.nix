@@ -13,6 +13,7 @@ in {
       plugins = config.plugins;
       initLua = config.lua;
       withRustAnalyzer = true;
+      withGopls = true;
     };
   };
 }
