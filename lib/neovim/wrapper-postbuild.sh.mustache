@@ -29,3 +29,8 @@ wrapper_args+=('--prefix' 'LUA_CPATH' ';' '{{{luaCPath}}}')
 
 rm "${neovim_wrapper_path}"
 makeWrapper "${wrapper_args[@]}"
+
+
+{{#rustAnalyzer}}
+makeWrapper "{{{rustAnalyzer}}}/bin/rust-analyzer" "${out}/bin/rust-analyzer"
+{{/rustAnalyzer}}

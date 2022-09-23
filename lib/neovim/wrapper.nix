@@ -7,6 +7,7 @@ neovim:
       vimAlias ? false,
       plugins ? [],
       initLua ? "",
+      withRustAnalyzer ? false,
     }@args:
       let
         pluginUtils = import ./plugins/utils.nix { inherit pkgs lib stdenv; };
@@ -18,6 +19,7 @@ neovim:
           inherit remoteProvidersCommand;
           pluginsDir = pluginUtils.packDir "nix-packer" plugins;
           initLua = "${writeText "init.lua" initLua}";
+          rustAnalyzer = if withRustAnalyzer then pkgs.rust-analyzer.outPath else "";
         };
 
         postBuildScript = lib.templateExecutableFile "wrapper-postbuild.sh" ./wrapper-postbuild.sh.mustache context;

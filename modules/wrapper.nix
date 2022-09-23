@@ -12,6 +12,7 @@ in {
       vimAlias = true;
       plugins = config.plugins;
       initLua = config.lua;
+      withRustAnalyzer = true;
     };
   };
 }
