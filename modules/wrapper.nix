@@ -15,6 +15,7 @@ in {
       withRustAnalyzer = true;
       withGopls = true;
       withJdtls = true;
+      withPylsp = true;
     };
   };
 }

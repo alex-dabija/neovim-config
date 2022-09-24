@@ -10,9 +10,16 @@ neovim:
       withRustAnalyzer ? false,
       withGopls ? false,
       withJdtls ? false,
+      withPylsp ? false,
     }@args:
       let
         pluginUtils = import ./plugins/utils.nix { inherit pkgs lib stdenv; };
+
+        pythonEnv = pkgs.python310.withPackages (python-packages: with python-packages; [
+          python-lsp-server
+          pylsp-mypy
+        ]);
+
         context = {
           # Arguments with default values are not captured by `@args`.
           inherit viAlias vimAlias neovim;
@@ -24,6 +31,7 @@ neovim:
           rustAnalyzer = if withRustAnalyzer then pkgs.rust-analyzer.outPath else "";
           gopls = if withGopls then pkgs.gopls.outPath else "";
           jdtls = if withJdtls then pkgs.jdt-language-server.outPath else "";
+          pylsp = if withPylsp then pythonEnv.outPath else "";
         };
 
         postBuildScript = lib.templateExecutableFile "wrapper-postbuild.sh" ./wrapper-postbuild.sh.mustache context;
