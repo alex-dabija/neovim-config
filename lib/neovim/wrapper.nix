@@ -11,6 +11,7 @@ neovim:
       withGopls ? false,
       withJdtls ? false,
       withPylsp ? false,
+      withLualsp ? false,
     }@args:
       let
         pluginUtils = import ./plugins/utils.nix { inherit pkgs lib stdenv; };
@@ -32,6 +33,7 @@ neovim:
           gopls = if withGopls then pkgs.gopls.outPath else "";
           jdtls = if withJdtls then pkgs.jdt-language-server.outPath else "";
           pylsp = if withPylsp then pythonEnv.outPath else "";
+          lualsp = if withLualsp then pkgs.sumneko-lua-language-server.outPath else "";
         };
 
         postBuildScript = lib.templateExecutableFile "wrapper-postbuild.sh" ./wrapper-postbuild.sh.mustache context;

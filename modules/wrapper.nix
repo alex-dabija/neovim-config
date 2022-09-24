@@ -16,6 +16,7 @@ in {
       withGopls = true;
       withJdtls = true;
       withPylsp = true;
+      withLualsp = true;
     };
   };
 }
