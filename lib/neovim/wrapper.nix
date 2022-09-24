@@ -9,6 +9,7 @@ neovim:
       initLua ? "",
       withRustAnalyzer ? false,
       withGopls ? false,
+      withJdtls ? false,
     }@args:
       let
         pluginUtils = import ./plugins/utils.nix { inherit pkgs lib stdenv; };
@@ -22,6 +23,7 @@ neovim:
           initLua = "${writeText "init.lua" initLua}";
           rustAnalyzer = if withRustAnalyzer then pkgs.rust-analyzer.outPath else "";
           gopls = if withGopls then pkgs.gopls.outPath else "";
+          jdtls = if withJdtls then pkgs.jdt-language-server.outPath else "";
         };
 
         postBuildScript = lib.templateExecutableFile "wrapper-postbuild.sh" ./wrapper-postbuild.sh.mustache context;

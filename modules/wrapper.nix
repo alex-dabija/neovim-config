@@ -14,6 +14,7 @@ in {
       initLua = config.lua;
       withRustAnalyzer = true;
       withGopls = true;
+      withJdtls = true;
     };
   };
 }
