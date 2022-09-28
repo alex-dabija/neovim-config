@@ -240,6 +240,12 @@
         inherit pkgs;
         config = modules.config;
 
+        overlays = {
+          neovimPlugins = (final: prev: {
+            neovimPlugins = plugins;
+          });
+        };
+
         packages = rec {
           neovim = modules.config.package;
           default = neovim;
