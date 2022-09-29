@@ -241,6 +241,9 @@
         config = modules.config;
 
         overlays = {
+          neovim = (final: prev: {
+            neovim = modules.config.package;
+          });
           neovimPlugins = (final: prev: {
             neovimPlugins = plugins;
           });
