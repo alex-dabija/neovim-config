@@ -3,6 +3,14 @@ start_directory: ./
 windows:
   - panes:
     - nvim
+  - shell_command_before:
+    - cd ~/work/nix-home
+    panes:
+      - nvim
+  - shell_command_before:
+    - cd ~/work/container-images
+    panes:
+      - nvim
   - panes:
     - null
   - panes:
@@ -13,11 +21,11 @@ windows:
     - null
   - panes:
     - null
-  - panes:
-    - null
-  - panes:
-    - null
-  - panes:
-    - null
-  - panes:
-    - null
+  - shell_command_before:
+    - cd ~/work/opensource/nix/home-manager
+    panes:
+      - nvim
+  - shell_command_before:
+    - cd ~/work/opensource/nix/nixpkgs
+    panes:
+      - nvim
