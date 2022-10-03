@@ -9,7 +9,7 @@ let
 in
   stdenv.mkDerivation {
     pname = "neovim";
-    version = "0.7.2";
+    version = "0.8.0";
 
     inherit src;
 
@@ -37,8 +37,8 @@ in
     disallowedReferences = [ stdenv.cc ];
 
     passthru = {
-      luaPath = luaEnv.pkgs.lib.genLuaPathAbsStr luaEnv;
-      luaCPath = luaEnv.pkgs.lib.genLuaCPathAbsStr luaEnv;
+      luaPath = luaEnv.pkgs.luaLib.genLuaPathAbsStr luaEnv;
+      luaCPath = luaEnv.pkgs.luaLib.genLuaCPathAbsStr luaEnv;
     };
 
     # Metadata from original neovim package

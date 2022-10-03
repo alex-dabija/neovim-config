@@ -7,7 +7,7 @@
     flake-utils.url = "github:numtide/flake-utils";
 
     neovim = {
-      url = "github:neovim/neovim?rev=e8ee6733926db83ef216497a1d660a173184ff39";
+      url = "github:neovim/neovim?rev=d367ed9b23d481998d297d812f54b950e5511c24";
       flake = false;
     };
 
