@@ -19,8 +19,10 @@ windows:
     - null
   - panes:
     - null
-  - panes:
-    - null
+  - shell_command_before:
+    - cd ~/work/opensource/nix/kubenix
+    panes:
+    - nvim
   - shell_command_before:
     - cd ~/work/opensource/nix/home-manager
     panes:
