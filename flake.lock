@@ -188,11 +188,11 @@
     "neovim-session-manager": {
       "flake": false,
       "locked": {
-        "lastModified": 1663070618,
-        "narHash": "sha256-TvUsBG5vV5xbHbzGJgRm0suJ3k/XR9zgrdmCpqRFkt8=",
+        "lastModified": 1664443199,
+        "narHash": "sha256-FWVYEL0i4eYWXEd3yl2uM+RJloiUCRxURh+dk+yqa7M=",
         "owner": "Shatur",
         "repo": "neovim-session-manager",
-        "rev": "3e8410cdad6e65c49c70d519477912035a4e91b8",
+        "rev": "4005dac93f5cd1257792259ef4df6af0e3afc213",
         "type": "github"
       },
       "original": {
