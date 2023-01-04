@@ -9,7 +9,7 @@ let
 in
   stdenv.mkDerivation {
     pname = "neovim";
-    version = "0.8.1";
+    version = "0.8.2";
 
     inherit src;
 
