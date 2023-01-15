@@ -260,6 +260,15 @@
             name = "nvim";
           };
           default = nvim;
+
+          uploadBuildsToCache = flake-utils.lib.mkApp {
+            name = "upload-builds-to-cache";
+            drv = pkgs.writeShellScriptBin "upload-builds-to-cache" ''
+              ${pkgs.nix}/bin/nix --verbose copy \
+                --to 's3://nix-cache?endpoint=minio-ng.tools.kbee.xyz&profile=nixbuilder&compression=zstd&parallel-compression=true' \
+                .#packages.x86_64-linux.neovim
+            '';
+          };
         };
       });
 }
