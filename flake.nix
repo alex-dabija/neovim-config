@@ -112,7 +112,7 @@
     };
 
     theme-nightfox = {
-      url = "github:EdenEast/nightfox.nvim?ref=main";
+      url = "github:EdenEast/nightfox.nvim?rev=97e66dfaaecdc81f1dd7da00f8d4a6033f3bf6b2";
       flake = false;
     };
 
