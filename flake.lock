@@ -476,11 +476,11 @@
     "oh-my-vim": {
       "flake": false,
       "locked": {
-        "lastModified": 1666964390,
-        "narHash": "sha256-H7TwKOwiVQNWwBFQ/frivb+dgdRajKyFjExwcR9VflA=",
+        "lastModified": 1674592249,
+        "narHash": "sha256-87aTjX3zNCy64fBlpeKjNdYmyYI6nLGEd05XvrVTn8k=",
         "ref": "nix-config",
-        "rev": "59af5387aad79538a59f396d50bdaf05eea91645",
-        "revCount": 324,
+        "rev": "f282292874ed6c3bea2eb4f3359656ecb772ddec",
+        "revCount": 327,
         "type": "git",
         "url": "https://gitlab.tools.kbee.xyz/alex/oh-my-vim.git"
       },
@@ -556,6 +556,7 @@
         "oh-my-vim": "oh-my-vim",
         "plenary": "plenary",
         "popup": "popup",
+        "rust-tools": "rust-tools",
         "telescope": "telescope",
         "telescope-tele-tabby": "telescope-tele-tabby",
         "telescope-ui-select": "telescope-ui-select",
@@ -567,6 +568,23 @@
         "vim-repeat": "vim-repeat",
         "vim-rhubarb": "vim-rhubarb",
         "vim-surround": "vim-surround"
+      }
+    },
+    "rust-tools": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1673136837,
+        "narHash": "sha256-+/kK6MU2EiSBFbfqQJwLkJICXZpf8oiShbcvsls3V8A=",
+        "owner": "simrat39",
+        "repo": "rust-tools.nvim",
+        "rev": "df584e84393ef255f5b8cbd709677d6a3a5bf42f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "simrat39",
+        "ref": "master",
+        "repo": "rust-tools.nvim",
+        "type": "github"
       }
     },
     "telescope": {

@@ -205,6 +205,11 @@
       url = "github:mrjones2014/legendary.nvim?rev=adf0ce4e492fbeb3f2902342748c2513e5a0b302";
       flake = false;
     };
+
+    rust-tools = {
+      url = "github:simrat39/rust-tools.nvim?ref=master";
+      flake = false;
+    };
   };
 
   outputs = {self, flake-utils, nixpkgs, ... }:

@@ -56,6 +56,7 @@ in rec {
       octo-nvim
       nvim-notify
       nvim-legendary
+      rust-tools
     ];
   };
 
@@ -260,5 +261,10 @@ in rec {
   nvim-legendary = plugin {
     pname = "nvim-legendary";
     src = inputs.nvim-legendary;
+  };
+
+  rust-tools = plugin {
+    pname = "rust-tools";
+    src = inputs.rust-tools;
   };
 }
